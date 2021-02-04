@@ -10,9 +10,10 @@
   min-width: 100vw;
   margin-bottom: 1rem;
   padding: 0;
+  color: $color-lightest;
   background-color: $color-dark;
   border-bottom: 1px solid $color-lightest;
-  box-shadow: 0px 4px 8px $color-lighter;
+  box-shadow: 0px 4px 8px $color-lightest;
 
   &__aside {
     display: flex;
@@ -24,9 +25,6 @@
   &__title {
     padding-left: 0.25rem;
     padding-right: 0.25rem;
-    color: $color-dark;
-    font-family: $secondary-font;
-    font-size: 2.5rem;
   }
 
   &__pic {

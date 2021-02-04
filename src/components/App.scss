@@ -1,0 +1,19 @@
+@import "styles/variables.scss";
+
+#root {
+  display: flex;
+  justify-content: center;
+  font-family: $main-font;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button:focus {
+  outline: none;
+  border: 1px solid $color-dark;
+  box-shadow: 0 0 10px $color-med;
+}

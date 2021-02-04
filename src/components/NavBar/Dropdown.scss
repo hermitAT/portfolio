@@ -1,7 +1,45 @@
 @import "styles/variables.scss";
 
-.top-level-menu {
-  list-style: none;
-  padding: 1rem;
-  margin: 1rem;
+.menu-level {
+  display: flex;
+
+  &__top {
+    list-style: none;
+    padding: 1rem;
+    margin: 1rem;
+  
+
+    > li {
+      position: relative;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    li:hover > ul {
+      display: inline;
+    }
+  }
+
+  &__second {
+    position: absolute;
+    top: 4.8rem;
+    right: -1.75rem;
+    padding: 0.5rem;
+    display: none;
+    border: 1px solid $white;
+    border-top: none;
+    border-radius: 0.5rem;
+    list-style: none;
+    text-decoration: none;
+    background-color: $color-dark;
+
+    > li {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      height: 2rem;
+    }
+  }
 }

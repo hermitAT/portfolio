@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 
 import NavBar from "components/NavBar";
+import Home from "components/Home";
 
 import './App.scss';
 
@@ -15,6 +16,7 @@ export default function App() {
     <Router>
       <main className="layout">
         <NavBar />
+        <Home />
       </main>
     </Router>
   );

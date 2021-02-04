@@ -8,6 +8,7 @@ import {
 
 import NavBar from "components/NavBar";
 import Home from "components/Home";
+import About from "components/About";
 
 import './App.scss';
 
@@ -16,7 +17,14 @@ export default function App() {
     <Router>
       <main className="layout">
         <NavBar />
-        <Home />
+        <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
       </main>
     </Router>
   );

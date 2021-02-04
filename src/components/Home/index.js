@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import useVisualMode from "hooks/useVisualMode";
 
@@ -29,7 +30,7 @@ export default function Home() {
             <img onClick={() => back()} src={sword} alt="link with sword" />
             <h3>There! With this sword you are free to roam this wasteland...</h3>
             <h3>Why not get started by learning a bit about me and my journey towards becoming a full-stack developer?</h3>
-            <h3>About me!</h3>
+            <h3><Link to="/about">About me!</Link></h3>
           </>
         )}
       </section>

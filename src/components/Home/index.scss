@@ -2,7 +2,8 @@
 
 .home {
 
-  margin-top: 12rem;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
   height: 400px;
   width: 600px;
   background-color: $white;
@@ -11,11 +12,12 @@
   align-items: center;
   padding: 1rem;
   border-radius: 0.5rem;
+  border: 2px solid $black;
 
   &-container {
-    width: 95%;
+    width: 97.5%;
     height: 95%;
-    border: 1px solid $black;
+    border: 2px solid $black;
     padding: 0.5rem;
     border-radius: 0.5rem;
     display: flex;

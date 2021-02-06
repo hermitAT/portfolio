@@ -16,13 +16,13 @@ export default function Contact() {
         </div>
         <div className="contact-email">
           <h3>Instagram:</h3>
-          <FontAwesomeIcon icon={["fab", "instagram"]} size="2x" onClick={() => window.open("https://www.linkedin.com/in/ahthornev2/", "_blank")} />
-          <p>@hermit_at</p>
+          <FontAwesomeIcon icon={["fab", "instagram"]} size="2x" onClick={() => window.open("https://www.instagram.com/hermit_at/", "_blank")} />
+          <p><a href="https://www.instagram.com/hermit_at/" target="_blank" rel="noopener noreferrer external">@hermit_at</a></p>
         </div>
         <div className="contact-email">
           <h3>Twitter:</h3>
-          <FontAwesomeIcon icon={["fab", "twitter"]} size="2x" onClick={() => window.open("https://www.linkedin.com/in/ahthornev2/", "_blank")} />
-          <p>@hermitAT</p>
+          <FontAwesomeIcon icon={["fab", "twitter"]} size="2x" onClick={() => window.open("https://twitter.com/hermitAT", "_blank")} />
+          <p><a href="https://twitter.com/hermitAT" target="_blank" rel="noopener noreferrer external">@hermit_at</a></p>
         </div>
         <div className="contact-email">
           <h3>GitHub:</h3>

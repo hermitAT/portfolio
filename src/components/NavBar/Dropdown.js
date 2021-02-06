@@ -12,7 +12,7 @@ export default function Dropdown(props) {
         <li><Link to="/about">About</Link></li>
         <li>Portfolio</li>
         <li>Gaming</li>
-        <li>Contact</li>
+        <li><Link to="/contact">Contact</Link></li>
       </ul>
       </li>
     </ul>

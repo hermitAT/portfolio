@@ -17,3 +17,21 @@ button:focus {
   border: 1px solid $color-dark;
   box-shadow: 0 0 10px $color-med;
 }
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 75px;
+  min-width: 100vw;
+  margin-top: 1rem;
+  padding: 0;
+  color: $white;
+  background-color: $color-dark;
+
+  p {
+    margin-right: 2rem;
+    font-size: 0.75rem;
+  }
+}

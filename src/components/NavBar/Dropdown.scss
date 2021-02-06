@@ -2,6 +2,7 @@
 
 .menu-level {
   display: flex;
+  color: $white;
 
   &__top {
     list-style: none;
@@ -45,7 +46,7 @@
     }
   }
 
-  a {
+  a, a:visited, a:hover, a:focus, a:active {
     text-decoration: none;
     color: $white;
   }

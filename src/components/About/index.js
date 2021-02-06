@@ -4,6 +4,7 @@ import useVisualMode from "hooks/useVisualMode";
 import Intro from "./Intro";
 import Education from "./Education";
 import Work from "./Work";
+import Hobbies from "./Hobbies";
 
 import "./index.scss";
 
@@ -28,7 +29,9 @@ export default function Home() {
         {mode === WORK && (
           <Work onBack={back} onNext={() => transition(HOBBIES)} />
         )}
-
+        {mode === HOBBIES && (
+          <Hobbies onBack={back} />
+        )}
       </section>
     </main>
   )

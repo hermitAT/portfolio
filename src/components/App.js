@@ -8,6 +8,7 @@ import {
 
 import NavBar from "components/NavBar";
 import Footer from "./Footer";
+import Contact from "./Contact";
 import Home from "components/Home";
 import About from "components/About";
 
@@ -21,6 +22,9 @@ export default function App() {
         <Switch>
           <Route path="/about">
             <About />
+          </Route>
+          <Route path="/contact">
+            <Contact />
           </Route>
           <Route path="/">
             <Home />

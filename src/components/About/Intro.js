@@ -15,7 +15,7 @@ export default function Intro(props) {
           <h4>I'm a full-stack web developer living on Vancouver Island, BC.</h4>
         </div>
       </div>
-      <p>After spending several years in the hospitality industry, I lept into a career change during Q4 2020.</p>
+      <p>After spending several years in the hospitality industry, I lept into a career change during the fall of 2020.</p>
       <p>I'm currently looking for full-time work as a developer and in the meantime I have been busy working on personal projects, like this site!</p>
       <div className="about-buttons">
         <Link to="/">

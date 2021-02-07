@@ -1,10 +1,10 @@
 @import "styles/variables.scss";
 
-.home {
+.portfolio {
 
   margin-top: 8rem;
   margin-bottom: 5rem;
-  height: 400px;
+  height: 500px;
   width: 750px;
   background-color: $white;
   display: flex;
@@ -21,18 +21,8 @@
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
-
-    img {
-      height: 120px;
-      width: auto;
-      padding: 1rem;
-
-      &:hover {
-        cursor: pointer;
-      }
-    }
   }
 }

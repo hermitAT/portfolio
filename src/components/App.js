@@ -11,6 +11,7 @@ import Footer from "./Footer";
 import Contact from "./Contact";
 import Home from "components/Home";
 import About from "components/About";
+import Portfolio from "components/Portfolio";
 
 import './App.scss';
 
@@ -22,6 +23,9 @@ export default function App() {
         <Switch>
           <Route path="/about">
             <About />
+          </Route>
+          <Route path="/portfolio">
+            <Portfolio />
           </Route>
           <Route path="/contact">
             <Contact />

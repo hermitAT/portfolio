@@ -36,7 +36,7 @@
     text-decoration: none;
     background-color: $color-dark;
 
-    > li {
+    > li, a {
       display: flex;
       align-items: center;
       justify-content: flex-end;

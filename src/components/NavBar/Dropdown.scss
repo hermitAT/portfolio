@@ -42,6 +42,10 @@
       justify-content: flex-end;
       height: 2rem;
       padding: 0.5rem;
+
+      &:hover {
+        color: $color-light;
+      }
     }
   }
 

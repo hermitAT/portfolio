@@ -49,6 +49,10 @@
         color: $color-light;
       }
     }
+
+    p:hover {
+      color: $color-light;
+    }
   }
 
   &-buttons {
@@ -61,6 +65,7 @@
   
     svg:hover {
       cursor: pointer;
+      color: $color-light;
     }
   
     svg:focus {

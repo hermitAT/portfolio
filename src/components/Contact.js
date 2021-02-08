@@ -34,6 +34,9 @@ export default function Contact(props) {
         <Link to="/">
           <FontAwesomeIcon icon="home" size="2x" />
         </Link>
+        <Link to="/">
+          <FontAwesomeIcon icon="passport" size="2x" />
+        </Link>
       </div>
       </section>
     </main>

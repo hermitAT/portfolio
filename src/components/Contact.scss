@@ -50,8 +50,9 @@
       }
     }
 
-    p:hover {
+    a:hover {
       color: $color-light;
+      cursor: pointer;
     }
   }
 
@@ -67,6 +68,11 @@
     svg:hover {
       cursor: pointer;
       color: $color-light;
+    }
+
+    a:hover {
+      color: $color-light;
+      cursor: pointer;
     }
   
     svg:focus {

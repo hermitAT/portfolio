@@ -2,10 +2,10 @@
 
 .portfolio {
 
-  margin-top: 8rem;
+  margin-top: 7rem;
   margin-bottom: 5rem;
-  height: 400px;
-  width: 750px;
+  height: 600px;
+  width: 90vw;
   background-color: $white;
   display: flex;
   justify-content: center;
@@ -24,5 +24,80 @@
     justify-content: space-around;
     align-items: center;
     text-align: center;
+  }
+
+  &-project {
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+    #csage {
+      height: 400px;
+      width: 450px;
+    }
+
+    #devtips {
+      height: 400px;
+      width: 600px;
+    }
+
+    #sched {
+      height: 400px;
+      width: 750px;
+    }
+    #tweets {
+      height: 400px;
+      width: 700px;
+    }
+    #tiny {
+      height: 350px;
+      width: 700px;
+    }
+
+    &-desc {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      width: 775px;
+      text-align: justify;
+    }
+  }
+
+  &-buttons {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  
+    svg:hover {
+      cursor: pointer;
+      color: $color-light;
+    }
+
+    svg:focus {
+      outline: none;
+      text-decoration: none;
+    }
   }
 }

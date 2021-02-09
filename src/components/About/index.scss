@@ -24,11 +24,12 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    margin-bottom: 0.5rem;
+    padding-bottom: 1rem;
+    line-height: 1.5;
     
     img {
-      height: 200px;
-      width: 200px;
+      height: 150px;
+      width: 150px;
       border-radius: 100%;
       margin-top: 0.5rem;
       margin-left: 1rem;
@@ -37,6 +38,7 @@
 
     p {
       width: 775px;
+      text-align: justify;
     }
   }
 
@@ -56,7 +58,7 @@
       cursor: pointer;
       color: $color-light;
     }
-  
+
     svg:focus {
       outline: none;
       text-decoration: none;

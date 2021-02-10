@@ -40,6 +40,11 @@
       width: 775px;
       text-align: justify;
     }
+
+    a:hover {
+      cursor: pointer;
+      color: $color-light;
+    }
   }
 
   &-intro {

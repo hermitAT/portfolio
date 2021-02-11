@@ -38,29 +38,45 @@
     align-items: center;
     text-align: center;
 
+    #logo {
+      height: 125px;
+      width: 400px;
+      margin: 0.5rem;
+      border-radius: 0.5rem;
+    }
+
     #csage {
-      height: 550px;
-      width: 675px;
+      height: 600px;
+      width: 800px;
       padding: 1rem;
-      border-radius: 0.25rem;
+      border-radius: 0.5rem;
     }
 
     #devtips {
-      height: 400px;
-      width: 600px;
+      height: 475px;
+      width: 800px;
+      padding: 1rem;
+      border-radius: 0.5rem;
     }
 
     #sched {
       height: 400px;
       width: 750px;
+      padding: 1rem;
+      border-radius: 0.5rem;
     }
     #tweets {
       height: 400px;
       width: 700px;
+      padding: 1rem;
+      border-radius: 0.5rem;
     }
+
     #tiny {
       height: 350px;
       width: 700px;
+      padding: 1rem;
+      border-radius: 0.5rem;
     }
   }
 
@@ -71,13 +87,6 @@
     padding: 1rem;
     padding-bottom: 0;
     padding-top: 0;
-
-    #csage-logo {
-      height: 125px;
-      width: 400px;
-      margin: 0.5rem;
-      border-radius: 0.5rem;
-    }
 
     p {
       width: 100%;

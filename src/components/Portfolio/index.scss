@@ -43,40 +43,61 @@
       width: 400px;
       margin: 0.5rem;
       border-radius: 0.5rem;
+
+      &-t {
+        height: 100px;
+        width: 300px;
+        margin: 0.5rem;
+        border-radius: 0.5rem;
+      }
+
+      &-s {
+        height: 125px;
+        width: 350px;
+        margin: 0.5rem;
+        border-radius: 0.5rem;
+      }
     }
 
     #csage {
       height: 600px;
       width: 800px;
-      padding: 1rem;
+      margin: 1rem;
       border-radius: 0.5rem;
+      border: 0.5px solid $white;
     }
 
     #devtips {
       height: 475px;
       width: 800px;
-      padding: 1rem;
+      margin: 1rem;
       border-radius: 0.5rem;
+      border: 0.5px solid $white;
     }
 
     #sched {
-      height: 400px;
-      width: 750px;
-      padding: 1rem;
+      height: 475px;
+      width: 800px;
+      margin: 1rem;
       border-radius: 0.5rem;
+      border: 0.25px solid $black;
     }
+
     #tweets {
-      height: 400px;
-      width: 700px;
-      padding: 1rem;
+      height: 500px;
+      width: 800px;
+      margin: 1rem;
       border-radius: 0.5rem;
+      border: 0.5px solid $white;
+
     }
 
     #tiny {
-      height: 350px;
-      width: 700px;
-      padding: 1rem;
+      height: 500px;
+      width: 800px;
+      margin: 1rem;
       border-radius: 0.5rem;
+      border: 0.25px solid $black;
     }
   }
 

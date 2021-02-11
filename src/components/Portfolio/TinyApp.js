@@ -14,7 +14,10 @@ export default function TinyApp(props) {
         <FontAwesomeIcon onClick={props.onNext} icon="book-open" size="2x" />
       </div>
       <div className="portfolio-details">
-        <img id="logo-t" src={logo} alt="tinyapp logo" />
+        <a href="https://github.com/hermitAT/tinyapp" target="_blank" rel="noopener noreferrer external">
+          <FontAwesomeIcon icon={["fab", "github"]} size="5x" />
+          <img id="logo-t" src={logo} alt="tweeter logo" />
+        </a>
         <p>TinyApp was my first real web dev project, in which users can create short URLs for their favorite sites, much like Bitly.</p>
         <p>Middleware to assist with user authentication and password security (bcrypt) and cookies were also introduced during this project.</p>
         <p>This project was challenging for someone completely new to programming, but looking back on it I am pretty proud of how I was able to complete it and even add my own flair to it!</p>

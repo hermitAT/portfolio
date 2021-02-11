@@ -14,7 +14,10 @@ export default function DevTips(props) {
         <FontAwesomeIcon onClick={props.onNext} icon="forward" size="2x" />
       </div> 
       <div className="portfolio-details">
-        <img id="logo" src={logo} alt="devtips logo" />
+        <a href="https://github.com/hermitAT/devtips-midterm" target="_blank" rel="noopener noreferrer external">
+          <FontAwesomeIcon icon={["fab", "github"]} size="5x" />
+          <img id="logo" src={logo} alt="devtips logo" />
+        </a>
         <p>DevTips was developed as a midterm project during Lighthouse Labs' bootcamp, designed for use by software and web developers to share tips, links and other helpful resources.</p>
         <p>Users can browse or search through resources based on associated hashtags, and add their own resources split in several different categories.</p>
         <p>Has support for YouTube, and also support for code snippets that can be viewed raw, copied or exported.</p>

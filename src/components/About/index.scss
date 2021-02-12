@@ -4,7 +4,7 @@
 
   margin-top: 8rem;
   margin-bottom: 5rem;
-  height: 450px;
+  min-height: 450px;
   width: 850px;
   background-color: $white;
   display: flex;
@@ -26,16 +26,13 @@
     text-align: center;
     padding-bottom: 1rem;
     line-height: 1.5;
-    
+
     img {
       height: 150px;
       width: 150px;
-      border-radius: 100%;
       margin-top: 0.5rem;
-      margin-left: 1rem;
-      object-fit: cover;
     }
-
+    
     p {
       width: 775px;
       text-align: justify;
@@ -47,10 +44,34 @@
     }
   }
 
+  &-head {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 0.25rem;
+    margin-top: 1rem;
+  }
+
   &-intro {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-around;
+    width: 100%;
+
+    #selfie {
+      border-radius: 100%;
+      object-fit: cover;
+    }
+
+    #drums {
+      width: 175px;
+    }
+
+    #gameboy {
+      height: 200px;
+      width: 125px;
+    }
   }
 
   &-buttons {

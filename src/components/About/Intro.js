@@ -9,8 +9,9 @@ export default function Intro(props) {
 
   return (
     <>
+    <section className="about-container">
       <div className="about-intro">
-        <img src={profile} alt="profile pic" />
+        <img id="selfie" src={profile} alt="profile pic" />
         <div>
           <h3>Hi! My name is Adam Thorne,</h3>
           <h4>I'm a full-stack web developer living on Vancouver Island, BC.</h4>
@@ -24,6 +25,7 @@ export default function Intro(props) {
         </Link>
         <FontAwesomeIcon onClick={props.onNext} icon="forward" size="2x" />
       </div>
+    </section>
     </>
   )
 }

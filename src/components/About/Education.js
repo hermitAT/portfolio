@@ -7,6 +7,7 @@ export default function Intro(props) {
 
   return (
     <>
+    <section className="about-container">
       <div className="about-intro">
         <a href="https://www.lighthouselabs.ca/" target="_blank" rel="noopener noreferrer external">
           <img src="https://pbs.twimg.com/profile_images/1197911268939550720/33RhGxsO_400x400.jpg" alt="LHL" />
@@ -19,6 +20,7 @@ export default function Intro(props) {
         <FontAwesomeIcon onClick={props.onBack} icon="backward" size="2x" />
         <FontAwesomeIcon onClick={props.onNext} icon="forward" size="2x" />
       </div>
+    </section>
     </>
   )
 }

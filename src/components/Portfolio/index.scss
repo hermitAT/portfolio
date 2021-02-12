@@ -109,6 +109,21 @@
     padding-bottom: 0;
     padding-top: 0;
 
+    a {
+      display: flex;
+      align-items: center;
+      min-height: 140px;
+
+      svg {
+        margin-right: 1.5rem;
+      }
+
+      &:hover {
+        cursor: pointer;
+        color: $color-light;
+      }
+    }
+
     p {
       width: 100%;
       text-align: justify;

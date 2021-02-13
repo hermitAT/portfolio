@@ -15,7 +15,7 @@ export default function Home() {
           <p>
             <Link to="/about">About</Link>
             {" | "}
-            <Link to="/portfolio">Portfolio</Link>
+            <Link to="/projects">Projects</Link>
             {" | "}
             <Link to="/contact">Contact</Link>
           </p>

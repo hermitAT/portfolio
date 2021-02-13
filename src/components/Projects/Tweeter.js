@@ -18,8 +18,8 @@ export default function Tweeter(props) {
           <FontAwesomeIcon icon={["fab", "github"]} size="5x" />
           <img id="logo" src={logo} alt="tweeter logo" />
         </a>
-        <p>Tweeter - an obvious clone of Twitter - was developed to get some experience with the basics of jQuery functionality, while also introducing SASS and Ajax.</p>
-        <p>A fairly simple app, but it was a great exercise to learn how to handle events on a webpage and was my first real taste of client-server interaction.</p>
+        <p>Tweeter - a Twitter clone - was developed to get some experience with the basics of jQuery and Ajax while improving our skills with CSS, also introducing the CSS proprocessor SASS.
+        It was a great exercise to learn how to handle events and improve our understanding of client-server interaction.</p>
         <img id="tweets" src={gif} alt="tweeter" />
         <p>TECH STACK: An Express.js server utilizing CSS/SASS and jQuery+Ajax.</p>
       </div>

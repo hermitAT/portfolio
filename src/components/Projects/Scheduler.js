@@ -18,9 +18,8 @@ export default function Scheduler(props) {
           <FontAwesomeIcon icon={["fab", "github"]} size="5x" />
           <img id="logo-s" src={logo} alt="scheduler logo" />
         </a>
-        <p><h3><a href="https://gracious-benz-e196c3.netlify.app/" target="_blank" rel="noopener noreferrer external">This app has been deployed! Take a look HERE!</a></h3>However, it may take several seconds for the API to wake up. Just a heads up!</p>
+        <p><h3><a href="https://gracious-benz-e196c3.netlify.app/" target="_blank" rel="noopener noreferrer external">This app has been deployed! Take a look HERE!</a></h3></p>
         <p>Interview Scheduler was designed to enable students to book, edit details, or cancel mock technical interviews with mentors or teachers.</p>
-        <p>This project was my first React app built with intense focus on test driven development using Jest, Storybook and Cypress.</p>
         <img id="sched" src={gif} alt="scheduler" />
         <p>TECH STACK: React.js application, utilizing Axios and SASS. Deployed via Heroku+Netlify.</p>
       </div>

@@ -18,9 +18,8 @@ export default function CSage(props) {
           <FontAwesomeIcon icon={["fab", "github"]} size="5x" />
           <img id="logo" src={logo} alt="sage logo" />
         </a>
-        <p>CocktailSage was the capstone project during the Lighthouse Labs bootcamp. With a fluid and intuitive user experience for browsing, creating and searching for cocktail recipes with particular characteristics.</p>
-        <p>With a detailed database of ingredients, strengths, flavours and categories, recipes can be sorted and viewed based on all of the different attributes possible.</p>
-        <p>Noteworthy and unique features include our calculated alcohol strength percentage (based on the ingredients used) and the 'reMix' feature, where users can use an existing recipe as a template to add their own twist to it.</p>
+        <p>CocktailSage was my capstone project built during the Lighthouse Labs bootcamp.
+        A cocktail recipe app designed and developed with a deep and detailed database of ingredients and recipe characteristics, complimented by a fluid and intuitive user experience for browsing, creating, editing and searching.</p>
         <img id="csage" src={gif} alt="cocktail sage" />
         <p>TECH STACK: React.js, React Router and SASS for the front-end, with Ruby on Rails and PSQL for the back-end.</p>
         <p>TEAM MEMBERS: Pavel Piatetskii and Molly Sutthasilp.</p>

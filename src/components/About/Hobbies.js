@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import BackArrow from "components/BackArrow";
 import player from "./nhl94player.png";
 import "./index.scss";
 
@@ -18,7 +19,7 @@ export default function Hobbies(props) {
       <p>I will play any game I can get my hands on, and have quite a background in competitive gaming - eSports. Check out my <a href="https://twitter.com/hermitAT" target="_blank" rel="noopener noreferrer external">Twitter here!</a></p>
       <p>A short summary doesn't do enough to describe who I am and what I love, so please <Link to="/contact">CONNECT</Link> with me if you want to know more!</p>
       <div className="about-buttons">
-        <FontAwesomeIcon onClick={props.onBack} icon="backward" size="2x" />
+        <BackArrow onBack={props.onBack} />
         <Link to="/">
           <FontAwesomeIcon icon="home" size="2x" />
         </Link>

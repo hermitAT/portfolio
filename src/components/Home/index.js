@@ -11,7 +11,7 @@ export default function Home() {
         <img src="https://media1.tenor.com/images/23aeae55097e92934edf083da2e2099a/tenor.gif?itemid=15767473" alt="hello" />
         <h1>Welcome!</h1>
         <h3>Thanks for visiting my page!</h3>
-        <div className="home-links">
+        <div className="home-links line3">
           <p>
             <Link to="/about">About</Link>
             {" | "}

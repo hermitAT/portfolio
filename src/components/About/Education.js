@@ -1,8 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon }  from "@fortawesome/react-fontawesome";
 
-
-import BackArrow from "components/BackArrow";
-import NextArrow from "components/NextArrow";
 import "./index.scss";
 
 export default function Intro(props) {
@@ -19,8 +17,8 @@ export default function Intro(props) {
       <p>I was able to start my portfolio thanks to their hands-on teaching methods, applying the skills I was learning immediately on new projects.</p>
       <p>This was a great environment to start my journey, but my love of technology and drive to learn has allowed me to push myself even further and grow independently as a developer.</p>
       <div className="about-buttons">
-        <BackArrow onBack={props.onBack} />
-        <NextArrow onNext={props.onNext} />
+        <FontAwesomeIcon icon="caret-left" size="3x" onClick={props.onBack} />
+        <FontAwesomeIcon icon="caret-right" size="3x" onClick={props.onNext} />
       </div>
     </section>
     </>

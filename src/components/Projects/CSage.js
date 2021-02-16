@@ -18,7 +18,7 @@ export default function CSage(props) {
           <FontAwesomeIcon icon={["fab", "github"]} size="5x" />
           <img id="logo" src={logo} alt="sage logo" />
         </a>
-        <p>CocktailSage was my capstone project built during the Lighthouse Labs bootcamp.
+        <p>CocktailSage was the capstone project built during the Lighthouse Labs bootcamp.
         A cocktail recipe app designed and developed with a deep and detailed database of ingredients and recipe characteristics, complimented by a fluid and intuitive user experience for browsing, creating, editing and searching.</p>
         <img id="csage" src={gif} alt="cocktail sage" />
         <p>TECH STACK: React.js, React Router and SASS for the front-end, with Ruby on Rails and PSQL for the back-end.</p>

@@ -2,7 +2,7 @@
 
 .home {
 
-  margin-top: 8rem;
+  margin-top: 9.5rem;
   margin-bottom: 5rem;
   height: 400px;
   width: 750px;
@@ -33,17 +33,32 @@
   }
 
   &-links {
-    width: 100%;
+    width: 70%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 
-    a:hover {
-      color: $color-light;
-      cursor: pointer;
-      transition: all 0.5s $ease;
-      font-size: 1.1rem;
+    .hide-icon {
+      visibility: hidden;
+      margin-right: 0.75rem;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+    
+      &:hover {
+        cursor: pointer;
+        transition: all 0.5s $ease;
+        font-size: 1.1rem;
+
+        .hide-icon {
+          color: $color-lightest;
+          visibility: visible;
+          transition: all 0.5s $ease;
+        }
+      }
     }
   }
 }

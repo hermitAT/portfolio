@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import NextArrow from "components/NextArrow";
 import profile from "./profile.jpg";
 import "./index.scss";
 
@@ -24,7 +23,7 @@ export default function Intro(props) {
         <Link to="/">
           <FontAwesomeIcon icon="home" size="2x" />
         </Link>
-        <NextArrow onNext={props.onNext} />
+        <FontAwesomeIcon onClick={props.onNext} icon="caret-right" size="3x" />
       </div>
     </section>
     </>

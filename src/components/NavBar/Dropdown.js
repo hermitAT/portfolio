@@ -9,9 +9,9 @@ export default function Dropdown(props) {
     <ul className="menu-level__top">
       <li><FontAwesomeIcon icon="bars" size="3x" />
       <ul className='menu-level__second'>
-        <Link to="/about"><li>About</li></Link>
-        <Link to="/projects"><li>Projects</li></Link>
-        <Link to="/contact"><li>Contact</li></Link>
+        <Link to="/about"><li><FontAwesomeIcon className="hide-icon" icon="caret-right" size="2x" />About</li></Link>
+        <Link to="/projects"><li><FontAwesomeIcon className="hide-icon" icon="caret-right" size="2x" />Projects</li></Link>
+        <Link to="/contact"><li><FontAwesomeIcon className="hide-icon" icon="caret-right" size="2x" />Contact</li></Link>
       </ul>
       </li>
     </ul>

@@ -1,4 +1,5 @@
 @import "styles/variables.scss";
+$ease: cubic-bezier(.2,1,.3,1);
 
 .menu-level {
   display: flex;
@@ -8,7 +9,7 @@
     list-style: none;
     padding: 1rem;
     margin: 1rem;
-  
+    width: 80px;
 
     > li {
       position: relative;
@@ -16,6 +17,13 @@
       display: flex;
       align-items: center;
       justify-content: center;
+
+      &:hover {
+        svg {
+          transition: all 0.5s $ease;
+          color: $color-light;
+        }
+      }
     }
 
     li:hover > ul {
@@ -25,8 +33,8 @@
 
   &__second {
     position: absolute;
-    top: 2.75rem;
-    right: -1.75rem;
+    top: 3rem;
+    right: 0;
     padding: 0.5rem;
     display: none;
     border-top: none;
@@ -41,9 +49,12 @@
       align-items: center;
       justify-content: flex-end;
       height: 2rem;
+      width: 150px;
       padding: 0.5rem;
 
       &:hover {
+        font-size: 1.1rem;
+        transition: all 0.5s $ease;
         color: $color-light;
       }
     }
@@ -52,5 +63,10 @@
   a, a:visited, a:hover, a:focus, a:active {
     text-decoration: none;
     color: $white;
+  }
+
+  &:hover {
+    transition: all 0.5s $ease;
+    color: $color-light;
   }
 }

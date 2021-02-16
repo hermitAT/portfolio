@@ -16,7 +16,8 @@ export default function Hobbies(props) {
         <h3>When I'm not working on code I spend my time indulging in my many, many hobbies.</h3>
       </div>
       <p>I play the drums, have an endless list of things to watch and read (big manga fan!), and love hockey - go Flyers!</p>
-      <p>I will play any game I can get my hands on, and have quite a background in competitive gaming - eSports. Check out my <a href="https://twitter.com/hermitAT" target="_blank" rel="noopener noreferrer external">Twitter here!</a></p>
+      <p>I will play any game I can get my hands on, and have some background in competitive gaming and eSports.</p>
+      <p>I have competed in tournaments across western North America for many different games, including League of Legends, Pokemon and card games like Magic: the Gathering.</p>
       <p>A short summary doesn't do enough to describe who I am and what I love, so please <Link to="/contact">CONNECT</Link> with me if you want to know more!</p>
       <div className="about-buttons">
         <BackArrow onBack={props.onBack} />

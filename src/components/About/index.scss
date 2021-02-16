@@ -40,6 +40,7 @@
 
     a:hover {
       cursor: pointer;
+      transition: all 0.5s $ease;
       color: $color-light;
     }
   }
@@ -63,15 +64,6 @@
       border-radius: 100%;
       object-fit: cover;
     }
-
-    #drums {
-      width: 175px;
-    }
-
-    #gameboy {
-      height: 200px;
-      width: 125px;
-    }
   }
 
   &-buttons {
@@ -79,10 +71,19 @@
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
+    padding-bottom: 0.5rem;
   
     svg:hover {
       cursor: pointer;
+      transition: all 0.5s $ease;
       color: $color-light;
+    }
+
+    a:hover {
+      color: $color-light;
+      cursor: pointer;
+      transition: all 0.5s $ease;
+      font-size: 1.1rem;
     }
 
     svg:focus {

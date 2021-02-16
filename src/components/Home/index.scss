@@ -42,6 +42,8 @@
     a:hover {
       color: $color-light;
       cursor: pointer;
+      transition: all 0.5s $ease;
+      font-size: 1.1rem;
     }
   }
 }

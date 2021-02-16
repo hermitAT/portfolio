@@ -26,7 +26,7 @@
 
   &__title {
     padding-left: 0.25rem;
-    padding-right: 0.25rem;
+    padding-right: 1rem;
     min-width: 250px;
   }
 
@@ -35,24 +35,4 @@
     margin-left: 1rem;
     margin-right: 1rem;
   }
-}
-
-
-.superlative {
-  border-right: solid 3px $color-lighter;
-  margin-left: 2rem;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: animated-text 1.5s steps(29,end) 1s 1 normal both,
-    animated-cursor 600ms steps(29,end) infinite;
-}
-
-@keyframes animated-text {
-  from {width: 0;}
-  to{width: 472px;}
-}
-
-@keyframes animated-cursor {
-  from {border-right-color: $color-lighter;}
-  to {border-right-color: transparent;}
 }

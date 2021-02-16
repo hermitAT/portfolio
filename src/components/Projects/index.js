@@ -1,9 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import useVisualMode from "hooks/useVisualMode";
 
+import Intro from "./Intro";
 import CSage from "./CSage";
 import DevTips from "./DevTips";
 import Scheduler from "./Scheduler";
@@ -26,16 +25,9 @@ export default function Portfolio(props) {
   return (
     <main className="portfolio">
       {mode === STATS && (
-        <section className="portfolio-container">
-          <img src="https://github-readme-stats.vercel.app/api/top-langs?username=hermitat&show_icons=true&locale=en&layout=compact&theme=tokyonight" alt="languages" />
-          <img src="https://github-readme-stats.vercel.app/api?username=hermitat&show_icons=true&theme=tokyonight&locale=en" alt="stats" />
-          <div className="portfolio-buttons">
-            <Link to="/">
-              <FontAwesomeIcon icon="home" size="2x" />
-            </Link>
-            <FontAwesomeIcon onClick={() => transition(CSAGE)} icon="forward" size="2x" />
-          </div>
-        </section>
+        <Intro
+          onNext={() => transition(CSAGE)}
+        />
       )}
       {mode === CSAGE && (
         <CSage

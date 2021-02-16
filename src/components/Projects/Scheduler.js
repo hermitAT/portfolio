@@ -10,8 +10,8 @@ export default function Scheduler(props) {
   return (
     <section className="portfolio-project">
       <div className="portfolio-buttons">
-        <FontAwesomeIcon onClick={props.onBack} icon="backward" size="2x" />
-        <FontAwesomeIcon onClick={props.onNext} icon="forward" size="2x" />
+        <FontAwesomeIcon onClick={props.onBack} icon="caret-left" size="3x" />
+        <FontAwesomeIcon onClick={props.onNext} icon="caret-right" size="3x" />
       </div>
       <div className="portfolio-details">
         <a href="https://github.com/hermitAT/scheduler" target="_blank" rel="noopener noreferrer external">
@@ -24,8 +24,8 @@ export default function Scheduler(props) {
         <p>TECH STACK: React.js application, utilizing Axios and SASS. Deployed via Heroku+Netlify.</p>
       </div>
       <div className="portfolio-buttons">
-        <FontAwesomeIcon onClick={props.onBack} icon="backward" size="2x" />
-        <FontAwesomeIcon onClick={props.onNext} icon="forward" size="2x" />
+        <FontAwesomeIcon onClick={props.onBack} icon="caret-left" size="3x" />
+        <FontAwesomeIcon onClick={props.onNext} icon="caret-right" size="3x" />
       </div>
     </section>
   )

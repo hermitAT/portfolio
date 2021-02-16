@@ -60,6 +60,11 @@
     justify-content: space-around;
     width: 100%;
 
+    h4 {
+      margin-left: 1rem;
+      width: 90%;
+    }
+
     #selfie {
       border-radius: 100%;
       object-fit: cover;

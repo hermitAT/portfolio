@@ -41,7 +41,7 @@
     a:hover {
       cursor: pointer;
       transition: all 0.5s $ease;
-      color: $color-lighter;
+      color: $color-lightest;
     }
   }
 
@@ -77,11 +77,11 @@
     svg:hover {
       cursor: pointer;
       transition: all 0.5s $ease;
-      color: $color-lighter;
+      color: $color-lightest;
     }
 
     a:hover {
-      color: $color-lighter;
+      color: $color-lightest;
       cursor: pointer;
       transition: all 0.5s $ease;
     }

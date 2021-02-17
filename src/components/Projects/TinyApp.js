@@ -10,9 +10,9 @@ export default function TinyApp(props) {
   return (
     <section className="portfolio-project">
       <div className="portfolio-buttons">
-        <FontAwesomeIcon onClick={props.onBack} icon="caret-left" size="3x" />
-        <FontAwesomeIcon onClick={props.onNext} icon="book-open" size="2x" />
-      </div>
+        <FontAwesomeIcon onClick={props.onBack} icon="caret-square-left" size="3x" />
+        <FontAwesomeIcon onClick={props.onNext} icon="book-open" size="3x" />
+      </div>  
       <div className="portfolio-details">
         <a href="https://github.com/hermitAT/tinyapp" target="_blank" rel="noopener noreferrer external">
           <FontAwesomeIcon icon={["fab", "github"]} size="5x" />
@@ -24,9 +24,9 @@ export default function TinyApp(props) {
         <p>TECH STACK: Express.js with an EJS view engine, leveraging Bootstrap for styling.</p>
       </div>
       <div className="portfolio-buttons">
-        <FontAwesomeIcon onClick={props.onBack} icon="caret-left" size="3x" />
-        <FontAwesomeIcon onClick={props.onNext} icon="book-open" size="2x" />
-      </div>
+        <FontAwesomeIcon onClick={props.onBack} icon="caret-square-left" size="3x" />
+        <FontAwesomeIcon onClick={props.onNext} icon="book-open" size="3x" />
+      </div>  
     </section>
   )
 }

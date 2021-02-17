@@ -4,12 +4,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import useVisualMode from "hooks/useVisualMode";
 
-import sass from "./images/sass.jpg";
+import sass from "./images/sass.png";
 import css from "./images/css.png";
 import express from "./images/ExpressJS.png";
-import heroku from "./images/heroku.svg";
+import heroku from "./images/heroku.webp";
 import jest from "./images/jest.png";
-import jquery from "./images/jquery.jpg";
+import jquery from "./images/jquery.png";
 import mocha from "./images/mocha.svg";
 import netlify from "./images/netlify.png";
 import rspec from "./images/rspec.png";
@@ -24,6 +24,7 @@ import ror from "./images/ror.png";
 import mysql from "./images/mysql.png";
 import bootstrap from "./images/bootstrap.png";
 import html from "./images/html5.png";
+import mongo from "./images/mongodb.png"
 import "./index.scss";
 
 export default function Intro(props) {
@@ -45,7 +46,7 @@ export default function Intro(props) {
         <span onClick={props.onTweet}><FontAwesomeIcon className="hide-icon" icon="caret-right" size="2x" />Tweeter</span>
         <span onClick={props.onTiny}><FontAwesomeIcon className="hide-icon" icon="caret-right" size="2x" />tinyApp</span>
       </div>
-      <h1>TOOLS & TECHNOLOGIES</h1>
+      <h1>TOOLS & TECHNOLOGIES:</h1>
       <div className="portfolio-stats">
         <img src="https://github-readme-stats.vercel.app/api/top-langs?username=hermitat&show_icons=true&locale=en&layout=compact&theme=tokyonight" alt="languages" />
         <img src="https://github-readme-stats.vercel.app/api?username=hermitat&show_icons=true&theme=tokyonight&locale=en" alt="stats" />
@@ -89,6 +90,7 @@ export default function Intro(props) {
             <span><img id="skill" src={netlify} alt="netlify" />Netlify</span>
             <span><img id="skill" src={mysql} alt="mysql" />MySQL</span>
             <span><img id="skill" src={psql} alt="psql" />PostgreSQL</span>
+            <span><img id="skill" src={mongo} alt="mongo" />MongoDB</span>
           </div>
           </>
         )}
@@ -106,9 +108,11 @@ export default function Intro(props) {
         )}
       <div className="portfolio-buttons">
         <Link to="/">
-            <FontAwesomeIcon icon="home" size="2x" />
+            <FontAwesomeIcon icon="home" size="3x" />
         </Link>
-        <FontAwesomeIcon onClick={props.onNext} icon="caret-right" size="3x" />
+        <a href="https://github.com/hermitAT/" target="_blank" rel="noopener noreferrer external">
+          <FontAwesomeIcon icon={["fab", "github"]} size="3x" />
+        </a>
       </div>
     </section>
   )

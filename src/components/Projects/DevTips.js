@@ -10,9 +10,9 @@ export default function DevTips(props) {
   return (
     <section className="portfolio-project">
       <div className="portfolio-buttons">
-        <FontAwesomeIcon onClick={props.onBack} icon="caret-left" size="3x" />
-        <FontAwesomeIcon onClick={props.onNext} icon="caret-right" size="3x" />
-      </div> 
+        <FontAwesomeIcon onClick={props.onBack} icon="caret-square-left" size="3x" />
+        <FontAwesomeIcon onClick={props.onNext} icon="caret-square-right" size="3x" />
+      </div>  
       <div className="portfolio-details">
         <a href="https://github.com/hermitAT/devtips-midterm" target="_blank" rel="noopener noreferrer external">
           <FontAwesomeIcon icon={["fab", "github"]} size="5x" />
@@ -25,9 +25,9 @@ export default function DevTips(props) {
         <p>TEAM MEMBERS: Pavel Piatetskii and Jeremy Dombrowski.</p>
       </div>
       <div className="portfolio-buttons">
-        <FontAwesomeIcon onClick={props.onBack} icon="caret-left" size="3x" />
-        <FontAwesomeIcon onClick={props.onNext} icon="caret-right" size="3x" />
-      </div>
+        <FontAwesomeIcon onClick={props.onBack} icon="caret-square-left" size="3x" />
+        <FontAwesomeIcon onClick={props.onNext} icon="caret-square-right" size="3x" />
+      </div>  
     </section>
   )
 }

@@ -22,9 +22,9 @@ export default function Intro(props) {
       <p>I'm currently looking for full-time work as a developer and in the meantime I have been busy working on personal projects, like this site!</p>
       <div className="about-buttons">
         <Link to="/">
-          <FontAwesomeIcon icon="home" size="2x" />
+          <FontAwesomeIcon icon="home" size="3x" />
         </Link>
-        <FontAwesomeIcon onClick={props.onNext} icon="caret-right" size="3x" />
+        <FontAwesomeIcon onClick={props.onNext} icon="caret-square-right" size="3x" />
       </div>
     </section>
     </>

@@ -19,9 +19,9 @@ export default function Hobbies(props) {
       <p>I have competed in tournaments across western North America for many different games, including League of Legends, Pokemon and card games like Magic: the Gathering.</p>
       <p>A short summary doesn't do enough to describe who I am and what I love, so please <Link to="/contact">CONNECT</Link> with me if you want to know more!</p>
       <div className="about-buttons">
-        <FontAwesomeIcon onClick={props.onNext} icon="caret-left" size="3x" />
+        <FontAwesomeIcon onClick={props.onBack} icon="caret-square-left" size="3x" />
         <Link to="/">
-          <FontAwesomeIcon icon="home" size="2x" />
+          <FontAwesomeIcon icon="home" size="3x" />
         </Link>
       </div>
     </section>

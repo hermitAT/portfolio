@@ -46,11 +46,8 @@ export default function Intro(props) {
         <span onClick={props.onTweet}><FontAwesomeIcon className="hide-icon" icon="caret-right" size="2x" />Tweeter</span>
         <span onClick={props.onTiny}><FontAwesomeIcon className="hide-icon" icon="caret-right" size="2x" />tinyApp</span>
       </div>
-      <h1>TOOLS & TECHNOLOGIES:</h1>
-      <div className="portfolio-stats">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs?username=hermitat&show_icons=true&locale=en&layout=compact&theme=tokyonight" alt="languages" />
-        <img src="https://github-readme-stats.vercel.app/api?username=hermitat&show_icons=true&theme=tokyonight&locale=en" alt="stats" />
-      </div>
+      <h1>SKILLS:</h1>
+      <h4 className="skills">I am experienced and skilled in the following tools and technologies!</h4>
       <div className="portfolio-tools">
         <span onClick={() => transition(STYLE)}><FontAwesomeIcon className="hide-icon" icon="caret-right" size="2x" />Style</span>
         <span onClick={() => transition(FRAMEWORKS)}><FontAwesomeIcon className="hide-icon" icon="caret-right" size="2x" />Frameworks</span>
@@ -106,6 +103,10 @@ export default function Intro(props) {
           </div>
           </>
         )}
+      <div className="portfolio-stats">
+        <img src="https://github-readme-stats.vercel.app/api/top-langs?username=hermitat&show_icons=true&locale=en&layout=compact&theme=tokyonight" alt="languages" />
+        <img src="https://github-readme-stats.vercel.app/api?username=hermitat&show_icons=true&theme=tokyonight&locale=en" alt="stats" />
+      </div>
       <div className="portfolio-buttons">
         <Link to="/">
             <FontAwesomeIcon icon="home" size="3x" />

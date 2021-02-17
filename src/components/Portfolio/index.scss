@@ -261,16 +261,21 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-  
+    
     svg:hover {
       cursor: pointer;
       color: $color-lightest;
       transition: all 0.5s $ease;
     }
-
+    
     svg:focus {
       outline: none;
       text-decoration: none;
     }
+  }
+
+  .skills {
+    display: flex;
+    text-align: justify;
   }
 }

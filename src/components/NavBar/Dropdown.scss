@@ -84,4 +84,18 @@ $ease: cubic-bezier(.2,1,.3,1);
     text-decoration: none;
     color: $white;
   }
-} 
+}
+
+@media only screen and (max-width: 600px) {
+  .menu-level {
+    display: flex;
+
+    &__top {
+      visibility: hidden;
+    }
+
+    &__second {
+      visibility: hidden;
+    }
+  }
+}

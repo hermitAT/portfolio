@@ -39,3 +39,9 @@ button:focus {
     font-size: 0.75rem;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  #root {
+    max-width: 100%;
+  }
+}

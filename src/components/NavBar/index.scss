@@ -28,11 +28,31 @@
     padding-left: 0.25rem;
     padding-right: 1rem;
     min-width: 250px;
+
+    &-h {
+      visibility: hidden;
+    }
   }
 
   &__pic {
     height: 3rem;
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    max-width: 100%;
+
+    &__aside {
+      visibility: hidden;
+    }
+
+    &__title-h {
+      visibility: visible;
+      margin-left: 2rem;
+      min-width: 275px;
+    }
   }
 }

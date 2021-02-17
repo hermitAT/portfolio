@@ -11,7 +11,7 @@ import TinyApp from "./TinyApp";
 
 import "./index.scss";
 
-export default function Portfolio(props) {
+export default function Projects(props) {
 
   const STATS = "STATS";
   const CSAGE = "CSAGE";

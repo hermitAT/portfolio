@@ -4,12 +4,12 @@
 
   margin-top: 8rem;
   margin-bottom: 5rem;
-  width: 900px;
+  width: 1000px;
   background-color: $white;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.5rem;
+  padding: 1rem;
   padding-top: 0.25rem;
   border-radius: 0.5rem;
   border: 2px solid $black;
@@ -60,6 +60,42 @@
           height: 80px;
           width: 90%;
           margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  &-tools {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+    border: 3px solid $black;
+    padding: 0.5rem;
+    margin: 0.5rem;
+
+    .hide-icon {
+      visibility: hidden;
+      margin-right: 0.75rem;
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+      border-radius: 0.5rem;
+    
+      &:hover {
+        cursor: pointer;
+        transition: all 0.5s $ease;
+        background-color: $color-lightest;
+
+        .hide-icon {
+          visibility: visible;
+          transition: all 0.5s $ease;
         }
       }
     }
@@ -188,23 +224,29 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: 3px solid $black;
+    padding: 0.5rem;
+    margin: 0.5rem;
 
     .hide-icon {
       visibility: hidden;
       margin-right: 0.75rem;
     }
 
-    a {
+    span {
       display: flex;
       align-items: center;
+      padding: 1rem;
+      border-radius: 0.5rem;
     
       &:hover {
         cursor: pointer;
         transition: all 0.5s $ease;
-        color: $color-lightest;
+        background-color: $color-lightest;
 
         .hide-icon {
-          color: $color-lightest;
           visibility: visible;
           transition: all 0.5s $ease;
         }
@@ -217,6 +259,7 @@
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   
     svg:hover {
       cursor: pointer;

@@ -27,6 +27,11 @@ export default function Portfolio(props) {
       {mode === STATS && (
         <Intro
           onNext={() => transition(CSAGE)}
+          onCSage={() => transition(CSAGE)}
+          onDevtips={() => transition(DEVTIPS)}
+          onSched={() => transition(SCHEDULER)}
+          onTweet={() => transition(TWEETER)}
+          onTiny={() => transition(TINYAPP)}
         />
       )}
       {mode === CSAGE && (

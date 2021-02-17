@@ -16,11 +16,9 @@ export default function NavBar(props) {
             <span>full-stack developer</span>
             <span>bartender and mixologist</span>
             <span>artist and musician</span>
-            <span>barista extrordinaire</span>
             <span>competitive CCG player</span>
             <span>NHL superfan</span>
             <span>avid manga reader</span>
-            <span>human Pokedex</span>
           </TextLoop>{" "}
         </h2>
       </div>

@@ -15,7 +15,7 @@ export default function Contact(props) {
           <a href="mailto:ahthornev2@gmail.com" target="_blank" rel="noopener noreferrer external">
             <div className="contact-link">
               <FontAwesomeIcon icon="paper-plane" size="2x" />
-              <p>ahthornev2@gmail.com</p>
+              <p>ahthornev2</p>
             </div>
           </a>
         </div>

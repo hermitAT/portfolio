@@ -105,6 +105,7 @@
   &-stats {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    margin: 1rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -277,5 +278,84 @@
   .skills {
     display: flex;
     text-align: justify;
+    line-height: 2;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .portfolio {
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+    max-width: 85vw;
+
+    &-tools {
+      display: flex;
+      flex-wrap: wrap;
+      width: 90%;
+
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        width: 40%;
+        font-size: 0.8rem;
+      }
+    }
+
+    &-links {
+      display: flex;
+      flex-wrap: wrap;
+      width: 90%;
+
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.75rem;
+        width: 40%;
+        font-size: 0.8rem;
+      }
+    }
+
+    &-stats {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-project {
+      width: 100%;
+      
+      #csage {
+        height: 400px;
+        width: 85vw;
+      }
+  
+      #devtips {
+        height: 325px;
+        width: 85vw;
+      }
+  
+      #sched {
+        height: 325px;
+        width: 85vw;
+      }
+  
+      #tweets {
+        height: 325px;
+        width: 85vw;
+  
+      }
+  
+      #tiny {
+        height: 325px;
+        width: 85vw;
+      }
+
+    }
+
+    &-details p {
+      width: 75vw;
+    }
   }
 }

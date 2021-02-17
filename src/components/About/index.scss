@@ -2,7 +2,7 @@
 
 .about {
 
-  margin-top: 9.5rem;
+  margin-top: 8rem;
   margin-bottom: 5rem;
   min-height: 450px;
   width: 850px;
@@ -94,6 +94,18 @@
     svg:focus {
       outline: none;
       text-decoration: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .about {
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+    max-width: 85vw;
+
+    &-container p {
+      width: 80vw;
     }
   }
 }

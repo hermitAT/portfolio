@@ -36,7 +36,7 @@
     margin-left: 7rem;
 
     h3 {
-      width: 200px;
+      min-width: 200px;
       display: flex;
       justify-content: flex-start;
     }
@@ -54,7 +54,6 @@
       color: $color-lighter;
       cursor: pointer;
       transition: all 0.5s $ease;
-      font-size: 1.1rem;
     }
   }
 
@@ -87,6 +86,22 @@
     svg:focus {
       outline: none;
       text-decoration: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contact {
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+    max-width: 85vw;
+
+    &-email {
+      margin-left: 1rem;
+    }
+
+    .long-email {
+      visibility: hidden;
     }
   }
 }

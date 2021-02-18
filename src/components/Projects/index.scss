@@ -64,41 +64,25 @@
     }
   }
 
-  &-tools {
-    width: 97.5%;
+  &--radio {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 1.1rem;
-    border-radius: 0.5rem;
-    border: 3px solid $black;
-    padding: 0.5rem;
-    margin: 0.5rem;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    width: 97.5%;
 
-    .hide-icon {
-      visibility: hidden;
-      margin-right: 0.75rem;
-    }
-
-    span {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 1rem;
+    &-container {
+      width: 100%;
+      background: $white;
+      border: 4px solid $black;
       border-radius: 0.5rem;
-      width: 20%;
-    
-      &:hover {
-        cursor: pointer;
-        transition: all 0.5s $ease;
-        background-color: $color-lightest;
-
-        .hide-icon {
-          visibility: visible;
-          transition: all 0.5s $ease;
-        }
-      }
+      display: inline-flex;
+      justify-content: space-around;
+      align-items: center;
+      padding-bottom: 0.5rem;
+      padding-top: 0.5rem;
+      flex-wrap: wrap;
+      flex-grow: 2;
     }
   }
 
@@ -143,47 +127,47 @@
         border-radius: 0.5rem;
       }
     }
+  }
 
-    #csage {
-      height: 600px;
-      width: 800px;
-      margin: 1rem;
-      border-radius: 0.5rem;
-      border: 0.5px solid $white;
-    }
+  #csage {
+    height: 600px;
+    width: 800px;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    border: 0.5px solid $white;
+  }
 
-    #devtips {
-      height: 475px;
-      width: 800px;
-      margin: 1rem;
-      border-radius: 0.5rem;
-      border: 0.5px solid $white;
-    }
+  #devtips {
+    height: 475px;
+    width: 800px;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    border: 0.5px solid $white;
+  }
 
-    #sched {
-      height: 475px;
-      width: 800px;
-      margin: 1rem;
-      border-radius: 0.5rem;
-      border: 0.25px solid $black;
-    }
+  #sched {
+    height: 475px;
+    width: 800px;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    border: 0.25px solid $black;
+  }
 
-    #tweets {
-      height: 500px;
-      width: 800px;
-      margin: 1rem;
-      border-radius: 0.5rem;
-      border: 0.5px solid $white;
+  #tweets {
+    height: 500px;
+    width: 800px;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    border: 0.5px solid $white;
 
-    }
+  }
 
-    #tiny {
-      height: 500px;
-      width: 800px;
-      margin: 1rem;
-      border-radius: 0.5rem;
-      border: 0.25px solid $black;
-    }
+  #tiny {
+    height: 500px;
+    width: 800px;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    border: 0.25px solid $black;
   }
 
   &-details {
@@ -280,6 +264,35 @@
     text-align: justify;
     line-height: 2;
   }
+
+  &--radio-container label {
+    background: transparent;
+    border: 1px solid transparent;
+    border-color: transparent;
+    border-radius: 0.5rem;
+    display: inline-block;
+    height: 2rem;
+    line-height: 2rem;
+    padding: 0.5rem;
+    text-align: center;
+    transition: .2s all ease-in-out;
+    min-width: 150px;
+    width: auto;
+    white-space: nowrap;
+  }
+
+  &--radio-container input {
+    display: none;
+  }
+
+  &--radio-container input:checked + label {
+    background: $color-lightest;
+    border: 1px solid transparent;
+  }
+
+  .img:hover {
+    cursor: pointer;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -290,15 +303,16 @@
 
     &-tools {
       display: flex;
+      justify-content: center;
       flex-wrap: wrap;
-      width: 90%;
+      width: 70%;
 
       span {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 1rem;
-        width: 40%;
+        padding: 0.75rem;
+        width: 90%;
         font-size: 0.8rem;
       }
     }
@@ -306,52 +320,109 @@
     &-links {
       display: flex;
       flex-wrap: wrap;
-      width: 90%;
+      width: 70%;
 
       span {
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 0.75rem;
+        width: 90%;
+        font-size: 0.8rem;
+      }
+    }
+
+    &-skills {
+      display: flex;
+      justify-content: space-around;
+  
+      span {
         width: 40%;
         font-size: 0.8rem;
+
+        #skill {
+          height: 100px;
+          width: auto;
+          max-width: 110%;
+          margin-bottom: 0.5rem;
+  
+          &-r {
+            border-radius: 100%;
+            height: 100px;
+            width: auto;
+            margin-bottom: 0.75rem;
+          }
+  
+          &-e {
+            height: 50px;
+            width: 120%;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+
+    &-details {
+      width: 90vw;
+  
+      a svg {
+        margin-right: 0.5rem;
+        height: 50px;
+        width: 50px;
+      }
+    }
+
+    #logo {
+      height: auto;
+      width: 50vw;
+
+      &-t {
+        height: 70px;
+        width: 45vw;
+      }
+
+      &-s {
+        height: 75px;
+        width: 45vw;
       }
     }
 
     &-stats {
       display: flex;
       flex-direction: column;
+
+      img {
+        max-width: 100%;
+      }
     }
 
     &-project {
       width: 100%;
-      
-      #csage {
-        height: 400px;
-        width: 85vw;
-      }
-  
-      #devtips {
-        height: 325px;
-        width: 85vw;
-      }
-  
-      #sched {
-        height: 325px;
-        width: 85vw;
-      }
-  
-      #tweets {
-        height: 325px;
-        width: 85vw;
-  
-      }
-  
-      #tiny {
-        height: 325px;
-        width: 85vw;
-      }
+    }
 
+    #csage {
+      height: 300px;
+      width: 90vw;
+    }
+
+    #devtips {
+      height: 250px;
+      width: 90vw;
+    }
+
+    #sched {
+      height: 250px;
+      width: 90vw;
+    }
+
+    #tweets {
+      height: 250px;
+      width: 90vw;
+    }
+
+    #tiny {
+      height: 250px;
+      width: 90vw;
     }
 
     &-details p {

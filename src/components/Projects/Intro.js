@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import useVisualMode from "hooks/useVisualMode";
+import ProjectSelector from "./ProjectSelector";
 
 import sass from "./images/sass.png";
 import css from "./images/css.png";
@@ -28,81 +29,107 @@ import mongo from "./images/mongodb.png"
 import "./index.scss";
 
 export default function Intro(props) {
-
+  
+  const LANG = "LANG";
   const STYLE = "STYLE";
   const FRAMEWORKS = "FRAMEWORKS";
   const DB = "DB";
   const TESTING = "TESTING";
+  
+  const [tech, setTech] = useState(LANG);
+  
+  const { mode, transition } = useVisualMode();
 
-  const { mode, transition } = useVisualMode(STYLE);
+  useEffect(() => {
+    transition(tech);
+  }, [tech])
 
   return (
     <section className="portfolio-container">
-      <h1>PROJECTS:</h1>
-      <div className="portfolio-links">
-        <span onClick={props.onCSage}><FontAwesomeIcon className="hide-icon" icon="caret-right" size="2x" />CocktailSage</span>
-        <span onClick={props.onDevtips}><FontAwesomeIcon className="hide-icon" icon="caret-right" size="2x" />DevTips</span>
-        <span onClick={props.onSched}><FontAwesomeIcon className="hide-icon" icon="caret-right" size="2x" />Scheduler</span>
-        <span onClick={props.onTweet}><FontAwesomeIcon className="hide-icon" icon="caret-right" size="2x" />Tweeter</span>
-        <span onClick={props.onTiny}><FontAwesomeIcon className="hide-icon" icon="caret-right" size="2x" />tinyApp</span>
-      </div>
+      <ProjectSelector
+        onCSage={props.onCSage}
+        onDevtips={props.onDevtips}
+        onSched={props.onSched}
+        onTweet={props.onTweet}
+        onTiny={props.onTiny}
+      />
       <h1>SKILLS:</h1>
-      <h4 className="skills">I am experienced and skilled in the following tools and technologies!</h4>
-      <div className="portfolio-tools">
-        <span onClick={() => transition(STYLE)}><FontAwesomeIcon className="hide-icon" icon="caret-right" size="2x" />Style</span>
-        <span onClick={() => transition(FRAMEWORKS)}><FontAwesomeIcon className="hide-icon" icon="caret-right" size="2x" />Frameworks</span>
-        <span onClick={() => transition(DB)}><FontAwesomeIcon className="hide-icon" icon="caret-right" size="2x" />Databases</span>
-        <span onClick={() => transition(TESTING)}><FontAwesomeIcon className="hide-icon" icon="caret-right" size="2x" />Testing</span>
+      <div class="portfolio--radio">
+        <div
+          class="portfolio--radio-container"
+          value={tech}
+          onChange={e => setTech(e.target.value)}
+        >
+          <input id="languages" name="tech" type="radio" value="LANG" checked={tech === LANG} />
+          <label for="languages">Languages</label>
+          <input id="Frameworks" name="tech" type="radio" value="FRAMEWORKS" checked={tech === FRAMEWORKS} />
+          <label for="Frameworks">Frameworks</label>
+          <input id="style" name="tech" type="radio" value="STYLE" checked={tech === STYLE} />
+          <label for="style">Style</label>
+          <input id="databases" name="tech" type="radio" value="DB" checked={tech === DB} />
+          <label for="databases">Databases</label>
+          <input id="testing" name="tech" type="radio" value="TESTING" checked={tech === TESTING} />
+          <label for="testing">Testing</label>
+        </div>
       </div>
-        {mode === STYLE && (
-          <>
-          <h2>STYLE:</h2>
-          <div className="portfolio-skills">
-            <span><img id="skill" src={html} alt="html5" />HTML5</span>
-            <span><img id="skill" src={css} alt="css" />CSS</span>
-            <span><img id="skill" src={sass} alt="sass" />SASS</span>
-            <span><img id="skill" src={bootstrap} alt="bootstrap" />Bootstrap</span>
-            <span><img id="skill" src={tailwind} alt="tailwind" />Tailwind.css</span>
-            <span><img id="skill" src={material} alt="material-ui" />Material-UI</span>
-          </div>
-          </>
-        )}
-        {mode === FRAMEWORKS && (
-          <>
-          <h2>FRAMEWORKS && LIBRARIES:</h2>
-          <div className="portfolio-skills">
-            <span><img id="skill" src={react} alt="react.js" />React.js</span>
-            <span><img id="skill" src={node} alt="node.js" />Node.js</span>
-            <span><img id="skill-e" src={express} alt="express" />Express.js</span>
-            <span><img id="skill" src={jquery} alt="jquery" />jQuery</span>
-            <span><img id="skill-r" src={ror} alt="ruby on rails" />Ruby on Rails</span>
-          </div>
-          </>
-        )}
-        {mode === DB && (
-          <>
-          <h2>DATABASES && CMSs</h2>
-          <div className="portfolio-skills">
-            <span><img id="skill" src={heroku} alt="heroku" />Heroku</span>
-            <span><img id="skill" src={netlify} alt="netlify" />Netlify</span>
-            <span><img id="skill" src={mysql} alt="mysql" />MySQL</span>
-            <span><img id="skill" src={psql} alt="psql" />PostgreSQL</span>
-            <span><img id="skill" src={mongo} alt="mongo" />MongoDB</span>
-          </div>
-          </>
-        )}
-        {mode === TESTING && (
-          <>
-          <h2>TESTING FRAMEWORKS:</h2>
-          <div className="portfolio-skills">
-            <span><img id="skill" src={mocha} alt="mocha" />Mocha & Chai</span>
-            <span><img id="skill" src={jest} alt="jest" />Jest</span>
-            <span><img id="skill" src={cypress} alt="cypress" />Cypress</span>
-            <span><img id="skill" src={storybook} alt="storybook" />Storybook</span>
-            <span><img id="skill" src={rspec} alt="rspec" />RSpec</span>
-          </div>
-          </>
-        )}
+      {mode === LANG && (
+        <>
+        <h2>LANGUAGES:</h2>
+        <div className="portfolio-skills">
+          <span><img id="skill" src={html} alt="html5" />HTML5</span>
+          <span><img id="skill" src={css} alt="css" />CSS</span>
+        </div>
+        </>
+      )}
+      {mode === STYLE && (
+        <>
+        <h2>STYLE:</h2>
+        <div className="portfolio-skills">
+          <span><img id="skill" src={html} alt="html5" />HTML5</span>
+          <span><img id="skill" src={css} alt="css" />CSS</span>
+          <span><img id="skill" src={sass} alt="sass" />SASS</span>
+          <span><img id="skill" src={bootstrap} alt="bootstrap" />Bootstrap</span>
+          <span><img id="skill" src={tailwind} alt="tailwind" />Tailwind</span>
+          <span><img id="skill" src={material} alt="material-ui" />Material-UI</span>
+        </div>
+        </>
+      )}
+      {mode === FRAMEWORKS && (
+        <>
+        <h2>FRAMEWORKS && LIBRARIES:</h2>
+        <div className="portfolio-skills">
+          <span><img id="skill-r" src={ror} alt="ruby on rails" />Ruby on Rails</span>
+          <span><img id="skill" src={jquery} alt="jquery" />jQuery</span>
+          <span><img id="skill" src={react} alt="react.js" />React.js</span>
+          <span><img id="skill" src={node} alt="node.js" />Node.js</span>
+          <span><img id="skill-e" src={express} alt="express" />Express.js</span>
+        </div>
+        </>
+      )}
+      {mode === DB && (
+        <>
+        <h2>DATABASES && CMSs</h2>
+        <div className="portfolio-skills">
+          <span><img id="skill" src={heroku} alt="heroku" />Heroku</span>
+          <span><img id="skill" src={netlify} alt="netlify" />Netlify</span>
+          <span><img id="skill" src={mysql} alt="mysql" />MySQL</span>
+          <span><img id="skill" src={psql} alt="psql" />PostgreSQL</span>
+          <span><img id="skill" src={mongo} alt="mongo" />MongoDB</span>
+        </div>
+        </>
+      )}
+      {mode === TESTING && (
+        <>
+        <h2>TESTING:</h2>
+        <div className="portfolio-skills">
+          <span><img id="skill" src={mocha} alt="mocha" />Mocha & Chai</span>
+          <span><img id="skill" src={jest} alt="jest" />Jest</span>
+          <span><img id="skill" src={cypress} alt="cypress" />Cypress</span>
+          <span><img id="skill" src={storybook} alt="storybook" />Storybook</span>
+          <span><img id="skill" src={rspec} alt="rspec" />RSpec</span>
+        </div>
+        </>
+      )}
       <div className="portfolio-stats">
         <img src="https://github-readme-stats.vercel.app/api/top-langs?username=hermitat&show_icons=true&locale=en&layout=compact&theme=tokyonight" alt="languages" />
         <img src="https://github-readme-stats.vercel.app/api?username=hermitat&show_icons=true&theme=tokyonight&locale=en" alt="stats" />

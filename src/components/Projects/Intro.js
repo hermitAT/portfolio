@@ -5,6 +5,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import useVisualMode from "hooks/useVisualMode";
 import ProjectSelector from "./ProjectSelector";
 
+
+import python from "./images/python.webp";
+import ruby from "./images/ruby.png";
+import js from "./images/js.png";
+import ts from "./images/ts.png";
 import sass from "./images/sass.png";
 import css from "./images/css.png";
 import express from "./images/ExpressJS.png";
@@ -25,7 +30,7 @@ import ror from "./images/ror.png";
 import mysql from "./images/mysql.png";
 import bootstrap from "./images/bootstrap.png";
 import html from "./images/html5.png";
-import mongo from "./images/mongodb.png"
+import mongo from "./images/mongodb.png";
 import "./index.scss";
 
 export default function Intro(props) {
@@ -78,6 +83,10 @@ export default function Intro(props) {
         <div className="portfolio-skills">
           <span><img id="skill" src={html} alt="html5" />HTML5</span>
           <span><img id="skill" src={css} alt="css" />CSS</span>
+          <span><img id="skill" src={js} alt="js" />Javascript</span>
+          <span><img id="skill" src={ts} alt="ts" />Typescript</span>
+          <span><img id="skill" src={ruby} alt="ruby" />Ruby</span>
+          <span><img id="skill" src={python} alt="python" />Python</span>
         </div>
         </>
       )}
@@ -85,8 +94,6 @@ export default function Intro(props) {
         <>
         <h2>STYLE:</h2>
         <div className="portfolio-skills">
-          <span><img id="skill" src={html} alt="html5" />HTML5</span>
-          <span><img id="skill" src={css} alt="css" />CSS</span>
           <span><img id="skill" src={sass} alt="sass" />SASS</span>
           <span><img id="skill" src={bootstrap} alt="bootstrap" />Bootstrap</span>
           <span><img id="skill" src={tailwind} alt="tailwind" />Tailwind</span>

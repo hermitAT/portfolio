@@ -18,12 +18,12 @@ export default function Intro(props) {
         </div>
       </div>
       <p>After spending several years in the hospitality industry, I lept into a career change during the fall of 2020.</p>
-      <p>I'm currently looking for full-time work as a developer and in the meantime I have been busy working on personal projects, like this site!</p>
+      <p>I'm currently looking for full-time work as a developer and in the meantime I have been busy working on personal projects!</p>
       <div className="about-buttons">
         <Link to="/">
-          <FontAwesomeIcon icon="home" size="3x" />
+          <FontAwesomeIcon icon="home" size="2x" />
         </Link>
-        <FontAwesomeIcon onClick={props.onNext} icon="caret-square-right" size="3x" />
+        <FontAwesomeIcon onClick={props.onNext} icon="caret-square-right" size="2x" />
       </div>
     </section>
     </>

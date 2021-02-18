@@ -10,22 +10,21 @@ export default function TinyApp(props) {
   return (
     <section className="portfolio-project">
       <div className="portfolio-buttons">
-        <FontAwesomeIcon onClick={props.onBack} icon="caret-square-left" size="3x" />
-        <FontAwesomeIcon onClick={props.onNext} icon="book-open" size="3x" />
+        <FontAwesomeIcon onClick={props.onBack} icon="caret-square-left" size="2x" />
+        <FontAwesomeIcon onClick={props.onNext} icon="book-open" size="2x" />
       </div>  
       <div className="portfolio-details">
         <a href="https://github.com/hermitAT/tinyapp" target="_blank" rel="noopener noreferrer external">
           <FontAwesomeIcon icon={["fab", "github"]} size="5x" />
           <img id="logo-t" src={logo} alt="tweeter logo" />
         </a>
-        <p>TinyApp was my first real web dev project, in which users can create short URLs for their favorite sites, much like bit.ly.
-        Middleware to assist with user authentication and password security (bcrypt) and cookies were also introduced during this project.</p>
+        <p>TinyApp was my first real web dev project, in which users can create short URLs for their favorite sites, a la bit.ly.</p>
         <img id="tiny" src={gif} alt="tinyapp" />
         <p>TECH STACK: Express, Bootstrap.</p>
       </div>
       <div className="portfolio-buttons">
-        <FontAwesomeIcon onClick={props.onBack} icon="caret-square-left" size="3x" />
-        <FontAwesomeIcon onClick={props.onNext} icon="book-open" size="3x" />
+        <FontAwesomeIcon onClick={props.onBack} icon="caret-square-left" size="2x" />
+        <FontAwesomeIcon onClick={props.onNext} icon="book-open" size="2x" />
       </div>  
     </section>
   )

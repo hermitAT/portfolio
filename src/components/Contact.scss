@@ -33,7 +33,7 @@
     align-items: center;
     justify-content: flex-start;
     width: 100%;
-    margin-left: 13rem;
+    margin-left: 6rem;
 
     h3 {
       min-width: 200px;
@@ -90,23 +90,24 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 704px) {
   .contact {
     margin-top: 7rem;
     margin-bottom: 3rem;
     max-width: 85vw;
     height: auto;
 
-    &-email {
-      margin-left: 1rem;
+    &-link p {
+      visibility: hidden;
     }
+  }
+}
 
-    &-link {
-      margin-left: 2rem;
-
-      p {
-        visibility: hidden;
-      }
-    }
+@media only screen and (max-width: 768px) {
+  .contact {
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+    max-width: 85vw;
+    height: auto;
   }
 }

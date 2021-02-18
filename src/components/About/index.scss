@@ -123,3 +123,29 @@
     }
   }
 }
+
+@media only screen and (max-width: 924px) {
+  .about {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    max-width: 85vw;
+
+    &-container p {
+      max-width: 80vw;
+      font-size: 0.8rem;
+    }
+
+    &-intro {
+      display: flex;
+      flex-direction: column;
+    }
+
+    p a {
+      color: $color-lighter;
+    }
+
+    svg {
+      height: 35px;
+    }
+  }
+}

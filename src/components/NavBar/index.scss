@@ -19,7 +19,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 3rem;
+    margin-left: 1rem;
     width: 100%;
     overflow: hidden;
     white-space: nowrap;
@@ -29,6 +29,10 @@
     padding-left: 0.25rem;
     padding-right: 1rem;
     min-width: 250px;
+
+    &-b {
+      display: none;
+    }
 
     &-h {
       display: none;
@@ -46,13 +50,38 @@
   .navbar {
     max-width: 100%;
 
-    &__aside {
-      visibility: hidden;
+    &__aside .navbar__title {
+      display: none;
+    }
+
+    &__aside .navbar__title-b {
+      display: none;
     }
 
     &__title-h {
       display: flex;
-      margin-left: 2rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .navbar {
+    max-width: 100%;
+
+    &__aside {
+      margin-left: 1rem;
+
+      .text {
+        display: none;
+      }
+    }
+
+    &__title {
+      display: none;
+
+      &-b {
+        display: flex;
+      }
     }
   }
 }

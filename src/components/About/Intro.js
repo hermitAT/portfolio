@@ -18,7 +18,6 @@ export default function Intro(props) {
         </div>
       </div>
       <p>After spending several years in the hospitality industry, I lept into a career change during the fall of 2020.</p>
-      <p>I had minimal exposure to code or programming prior to this leap, but I have been able to learn new tools and technologies with great aptitude.</p>
       <p>I'm currently looking for full-time work as a developer and in the meantime I have been busy working on personal projects, like this site!</p>
       <div className="about-buttons">
         <Link to="/">

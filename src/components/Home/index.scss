@@ -102,3 +102,29 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .home {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    max-width: 85vw;
+    height: auto;
+
+    &-links {
+      width: 100%;
+
+      .hide-icon {
+        display: none;
+      }
+
+      a {
+        display: flex;
+        justify-content: center;
+        width: 150px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        background-color: $color-lightest
+      }
+    }
+  }
+}

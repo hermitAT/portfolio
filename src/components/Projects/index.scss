@@ -446,3 +446,155 @@
     }
   }
 }
+
+@media only screen and (max-width: 1080px) {
+  .portfolio {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    max-width: 85vw;
+
+    &-tools {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 70%;
+
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.75rem;
+        width: 90%;
+        font-size: 0.8rem;
+      }
+    }
+
+    &-links {
+      display: flex;
+      flex-wrap: wrap;
+      width: 70%;
+
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.75rem;
+        width: 90%;
+        font-size: 0.8rem;
+      }
+    }
+
+    &-skills {
+      display: flex;
+      justify-content: space-around;
+  
+      span {
+        width: 40%;
+        font-size: 0.8rem;
+
+        #skill {
+          height: 100px;
+          width: auto;
+          max-width: 110%;
+          margin-bottom: 0.5rem;
+  
+          &-r {
+            border-radius: 100%;
+            height: 100px;
+            width: auto;
+            margin-bottom: 0.75rem;
+          }
+  
+          &-e {
+            height: 50px;
+            width: 120%;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+
+    &-details {
+      width: 90vw;
+  
+      a svg {
+        margin-right: 0.5rem;
+        height: 50px;
+        width: 50px;
+      }
+    }
+
+    #logo {
+      height: auto;
+      width: 50vw;
+
+      &-t {
+        height: auto;
+        width: 45vw;
+      }
+
+      &-s {
+        height: auto;
+        width: 45vw;
+      }
+    }
+
+    &-stats {
+      display: flex;
+      flex-direction: column;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    &-project {
+      width: 100%;
+    }
+
+    #csage {
+      height: auto;
+      min-height: 300px;
+      width: 85vw;
+    }
+
+    #devtips {
+      height: auto;
+      min-height: 250px;
+      width: 85vw;
+    }
+
+    #sched {
+      height: auto;
+      min-height: 250px;
+      width: 85vw;
+    }
+
+    #tweets {
+      height: auto;
+      min-height: 250px;
+      width: 85vw;
+    }
+
+    #tiny {
+      height: auto;
+      min-height: 250px;
+      width: 85vw;
+    }
+
+    &-details p {
+      width: 75vw;
+    }
+
+    &--radio-container label {
+      min-width: 90%;
+      white-space: nowrap;
+    }
+
+    &-buttons {
+      svg {
+        height: 35px;
+      }
+    }
+  }
+}

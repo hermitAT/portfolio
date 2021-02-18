@@ -1,6 +1,7 @@
 import React from "react";
 import TextLoop from "react-text-loop";
 
+import pkmn from "./pkmn.gif";
 import Dropdown from "./Dropdown";
 import "./index.scss";
 
@@ -9,7 +10,7 @@ export default function NavBar(props) {
   return (
     <nav className="navbar">
       <div className="navbar__aside">
-        <img className="navbar__pic" src="https://media.giphy.com/media/TZco470UACpNK/source.gif" alt="profile pic" />
+        <img className="navbar__pic" src={pkmn} alt="profile pic" />
         <h1 className="navbar__title">Adam Thorne,</h1>
         <h1 className="navbar__title-b">Adam Thorne</h1>
         <h2 className="text">

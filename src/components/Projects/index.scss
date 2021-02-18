@@ -370,20 +370,20 @@
         height: 50px;
         width: 50px;
       }
-    }
 
-    #logo {
-      height: auto;
-      width: 50vw;
-
-      &-t {
-        height: 70px;
-        width: 45vw;
-      }
-
-      &-s {
-        height: 75px;
-        width: 45vw;
+      #logo {
+        height: auto;
+        width: 50vw;
+    
+        &-t {
+          height: 70px;
+          width: 45vw;
+        }
+    
+        &-s {
+          height: 75px;
+          width: 45vw;
+        }
       }
     }
 
@@ -527,16 +527,22 @@
 
     #logo {
       height: auto;
-      width: 50vw;
+      max-height: 90px;
+      width: auto;
+      max-width: 200px;
 
       &-t {
         height: auto;
-        width: 45vw;
+        max-height: 100px;
+        width: auto;
+        max-width: 175px;
       }
 
       &-s {
         height: auto;
-        width: 45vw;
+        max-height: 110px;
+        width: auto;
+        max-width: 175px;
       }
     }
 

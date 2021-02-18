@@ -13,7 +13,7 @@ export default function Intro(props) {
       <div className="about-intro">
         <img id="selfie" src={profile} alt="profile pic" />
         <div>
-          <h3>Hi! My name is Adam Thorne,</h3>
+          <h3>My name is Adam Thorne,</h3>
           <h4>a full-stack web developer living on Vancouver Island, BC.</h4>
         </div>
       </div>

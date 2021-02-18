@@ -49,25 +49,29 @@
     font-size: 1.1rem;
 
     .hide-icon {
-      visibility: hidden;
+      display: none;
       margin-right: 0.75rem;
     }
 
     a {
       display: flex;
       align-items: center;
+      justify-content: center;
       border-radius: 0.5rem;
-      padding: 0.5rem;
+      width: 175px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      background-color: $color-lightest;
     
       &:hover {
         cursor: pointer;
-        transition: all 0.5s $ease;
+        transition: all 1s $ease;
         background-color: $color-lightest;
         border-radius: 0.5rem;
 
         .hide-icon {
-          visibility: visible;
-          transition: all 0.5s $ease;
+          display: flex;
+          transition: all 1s $ease;
         }
       }
     }

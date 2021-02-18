@@ -29,7 +29,7 @@ export default function ProjectSelector(props) {
   return (
     <>
     <div class="portfolio--radio">
-      <h4>PROJECTS:</h4>
+      <h1>PROJECTS:</h1>
       <p>View a preview or click the preview to see more!</p>
       <div
         class="portfolio--radio-container"

@@ -100,12 +100,26 @@
 
 @media only screen and (max-width: 600px) {
   .about {
-    margin-top: 7rem;
-    margin-bottom: 3rem;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
     max-width: 85vw;
 
     &-container p {
-      width: 80vw;
+      max-width: 80vw;
+      font-size: 0.8rem;
+    }
+
+    &-intro {
+      display: flex;
+      flex-direction: column;
+    }
+
+    p a {
+      color: $color-lighter;
+    }
+
+    svg {
+      height: 35px;
     }
   }
 }

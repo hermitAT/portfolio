@@ -33,7 +33,7 @@
     align-items: center;
     justify-content: flex-start;
     width: 100%;
-    margin-left: 7rem;
+    margin-left: 13rem;
 
     h3 {
       min-width: 200px;
@@ -95,13 +95,18 @@
     margin-top: 7rem;
     margin-bottom: 3rem;
     max-width: 85vw;
+    height: auto;
 
     &-email {
       margin-left: 1rem;
     }
 
-    .long-email {
-      visibility: hidden;
+    &-link {
+      margin-left: 2rem;
+
+      p {
+        visibility: hidden;
+      }
     }
   }
 }

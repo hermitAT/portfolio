@@ -297,8 +297,8 @@
 
 @media only screen and (max-width: 600px) {
   .portfolio {
-    margin-top: 7rem;
-    margin-bottom: 3rem;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
     max-width: 85vw;
 
     &-tools {
@@ -401,32 +401,48 @@
     }
 
     #csage {
-      height: 300px;
+      height: auto;
+      min-height: 300px;
       width: 90vw;
     }
 
     #devtips {
-      height: 250px;
+      height: auto;
+      min-height: 250px;
       width: 90vw;
     }
 
     #sched {
-      height: 250px;
+      height: auto;
+      min-height: 250px;
       width: 90vw;
     }
 
     #tweets {
-      height: 250px;
+      height: auto;
+      min-height: 250px;
       width: 90vw;
     }
 
     #tiny {
-      height: 250px;
+      height: auto;
+      min-height: 250px;
       width: 90vw;
     }
 
     &-details p {
       width: 75vw;
+    }
+
+    &--radio-container label {
+      min-width: 90%;
+      white-space: nowrap;
+    }
+
+    &-buttons {
+      svg {
+        height: 35px;
+      }
     }
   }
 }

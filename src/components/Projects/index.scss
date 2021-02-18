@@ -402,32 +402,32 @@
 
     #csage {
       height: auto;
-      min-height: 300px;
-      width: 90vw;
+      min-height: 275px;
+      width: 95vw;
     }
 
     #devtips {
       height: auto;
       min-height: 250px;
-      width: 90vw;
+      width: 95vw;
     }
 
     #sched {
       height: auto;
       min-height: 250px;
-      width: 90vw;
+      width: 95vw;
     }
 
     #tweets {
       height: auto;
       min-height: 250px;
-      width: 90vw;
+      width: 95vw;
     }
 
     #tiny {
       height: auto;
       min-height: 250px;
-      width: 90vw;
+      width: 95vw;
     }
 
     &-details p {
@@ -452,6 +452,7 @@
     margin-top: 6rem;
     margin-bottom: 2rem;
     max-width: 85vw;
+    font-size: 0.8rem;
 
     &-tools {
       display: flex;
@@ -550,6 +551,10 @@
 
     &-project {
       width: 100%;
+
+      p {
+        font-size: 0.8rem;
+      }
     }
 
     #csage {

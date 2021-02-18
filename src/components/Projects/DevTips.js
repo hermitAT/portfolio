@@ -21,8 +21,7 @@ export default function DevTips(props) {
         <p>DevTips was developed as a midterm project during Lighthouse Labs' bootcamp, to be used by web developers to share tips, links and other helpful resources.
         Users can browse or search through resources based on associated hashtags, and add their own resources split in several different categories.</p>
         <img id="devtips" src={gif} alt="devtips" />
-        <p>TECH STACK: PSQL for the database, Express.js server using an EJS view engine, styled with Bootstrap and CSS.</p>
-        <p>TEAM MEMBERS: Pavel Piatetskii and Jeremy Dombrowski.</p>
+        <p>TECH STACK: PSQL, Express, Bootstrap, CSS.</p>
       </div>
       <div className="portfolio-buttons">
         <FontAwesomeIcon onClick={props.onBack} icon="caret-square-left" size="3x" />

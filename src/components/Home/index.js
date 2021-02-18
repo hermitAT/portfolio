@@ -10,11 +10,12 @@ export default function Home() {
     <main className="home">
       <section className="home-container">
         <img src="https://media1.tenor.com/images/23aeae55097e92934edf083da2e2099a/tenor.gif?itemid=15767473" alt="hello" />
-        <h1>Welcome!</h1>
-        <h3>Thanks for visiting!</h3>
+        <h3>I'm Adam Thorne, welcome to my portfolio!</h3>
         <div className="home-links">
             <Link to="/about"><FontAwesomeIcon className="hide-icon" icon="caret-right" size="2x" />About</Link>
+            <p>|</p>
             <Link to="/projects"><FontAwesomeIcon className="hide-icon" icon="caret-right" size="2x" />Projects</Link>
+            <p>|</p>
             <Link to="/contact"><FontAwesomeIcon className="hide-icon" icon="caret-right" size="2x" />Contact</Link>
         </div>
       </section>

@@ -21,7 +21,7 @@ export default function Tweeter(props) {
         <p>Tweeter - a Twitter clone - was developed to get some experience with the basics of jQuery and Ajax while improving our skills with CSS, also introducing the CSS proprocessor SASS.
         It was a great exercise to learn how to handle events and improve our understanding of client-server interaction.</p>
         <img id="tweets" src={gif} alt="tweeter" />
-        <p>TECH STACK: An Express.js engine using pure CSS/SASS and jQuery+Ajax.</p>
+        <p>TECH STACK: Express, CSS, SASS, jQuery, Ajax.</p>
       </div>
       <div className="portfolio-buttons">
         <FontAwesomeIcon onClick={props.onBack} icon="caret-square-left" size="3x" />

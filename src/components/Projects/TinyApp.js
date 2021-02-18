@@ -21,7 +21,7 @@ export default function TinyApp(props) {
         <p>TinyApp was my first real web dev project, in which users can create short URLs for their favorite sites, much like bit.ly.
         Middleware to assist with user authentication and password security (bcrypt) and cookies were also introduced during this project.</p>
         <img id="tiny" src={gif} alt="tinyapp" />
-        <p>TECH STACK: Express.js with an EJS view engine, leveraging Bootstrap for styling.</p>
+        <p>TECH STACK: Express, Bootstrap.</p>
       </div>
       <div className="portfolio-buttons">
         <FontAwesomeIcon onClick={props.onBack} icon="caret-square-left" size="3x" />

@@ -21,7 +21,7 @@ export default function Scheduler(props) {
         <p><h3><a href="https://gracious-benz-e196c3.netlify.app/" target="_blank" rel="noopener noreferrer external">This app has been deployed! Take a look HERE!</a></h3></p>
         <p>Interview Scheduler was designed to enable students to book, edit details, or cancel mock technical interviews with mentors or teachers.</p>
         <img id="sched" src={gif} alt="scheduler" />
-        <p>TECH STACK: React.js application, utilizing Axios and SASS. Deployed via Heroku+Netlify.</p>
+        <p>TECH STACK: React, Axios, CSS, SASS, Heroku + Netlify.</p>
       </div>
       <div className="portfolio-buttons">
         <FontAwesomeIcon onClick={props.onBack} icon="caret-square-left" size="3x" />

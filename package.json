@@ -23,6 +23,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.2",
     "react-text-loop": "^2.3.0",
+    "sass-loader": "^11.0.1",
     "web-vitals": "^1.1.0"
   },
   "scripts": {

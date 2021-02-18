@@ -11,9 +11,9 @@ export default function Dropdown(props) {
 
   return (
     <div className="menu-container">
-      <button onClick={onClick} className="menu-trigger">
+      <div onClick={onClick} className="menu-trigger">
         <FontAwesomeIcon icon="bars" size="4x" />
-      </button>
+      </div>
       <nav className={`menu ${isActive ? 'active' : 'inactive'}`}>
         <ul onClick={onClick} >
           <li><Link to="/about"><FontAwesomeIcon className="hide-icon" icon="caret-right" size="2x" />About</Link></li>

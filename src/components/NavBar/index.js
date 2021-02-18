@@ -16,10 +16,15 @@ export default function NavBar(props) {
           <TextLoop interval={2500}>
             <span>full-stack developer</span>
             <span>bartender and mixologist</span>
-            <span>artist and musician</span>
+            <span>amateur designer</span>
             <span>competitive CCG player</span>
-            <span>NHL superfan</span>
+            <span>pixel artist</span>
             <span>avid manga reader</span>
+            <span>musician and drummer</span>
+            <span>hobbyist and collector</span>
+            <span>NHL superfan</span>
+            <span>barista extrordinaire</span>
+            <span>Nintendo fanboy</span>
           </TextLoop>{" "}
         </h2>
       </div>

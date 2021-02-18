@@ -6,7 +6,7 @@
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  max-height: 75px;
+  height: 80px;
   min-width: 100vw;
   margin-bottom: 1rem;
   padding: 0;
@@ -49,6 +49,7 @@
 @media only screen and (max-width: 600px) {
   .navbar {
     max-width: 100%;
+    height: 75px;
 
     &__aside .navbar__title {
       display: none;

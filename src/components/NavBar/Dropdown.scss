@@ -4,7 +4,7 @@
   background: $color-dark;
   border-radius: 8px;
   position: absolute;
-  top: 3rem;
+  top: 3.25rem;
   right: 1rem;
   width: 200px;
   opacity: 0;
@@ -21,6 +21,10 @@
       color: $white;
       border: none;
       outline: none;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 
@@ -58,7 +62,6 @@
 
 @media only screen and (max-width: 600px) {
   .menu {
-    top: 2.75rem;
     width: 150px;
 
     li a {

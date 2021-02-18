@@ -13,9 +13,9 @@ export default function Home() {
         <h3>I'm Adam Thorne, welcome to my portfolio!</h3>
         <div className="home-links">
             <Link to="/about"><FontAwesomeIcon className="hide-icon" icon="caret-right" size="2x" />About</Link>
-            <p>|</p>
+            <h1>|</h1>
             <Link to="/projects"><FontAwesomeIcon className="hide-icon" icon="caret-right" size="2x" />Projects</Link>
-            <p>|</p>
+            <h1>|</h1>
             <Link to="/contact"><FontAwesomeIcon className="hide-icon" icon="caret-right" size="2x" />Contact</Link>
         </div>
       </section>

@@ -15,7 +15,7 @@ export default function Dropdown(props) {
         <FontAwesomeIcon icon="bars" size="4x" />
       </button>
       <nav className={`menu ${isActive ? 'active' : 'inactive'}`}>
-        <ul>
+        <ul onClick={onClick} >
           <li><Link to="/about"><FontAwesomeIcon className="hide-icon" icon="caret-right" size="2x" />About</Link></li>
           <li><Link to="/projects"><FontAwesomeIcon className="hide-icon" icon="caret-right" size="2x" />Projects</Link></li>
           <li><Link to="/contact"><FontAwesomeIcon className="hide-icon" icon="caret-right" size="2x" />Contact</Link></li>

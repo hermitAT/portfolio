@@ -6,7 +6,7 @@ export default function Footer(props) {
 
   return (
     <nav className="footer">
-      <p>copyright Adam Thorne 2021</p>
+      <p>built by Adam Thorne 2021</p>
     </nav>
   )
 }

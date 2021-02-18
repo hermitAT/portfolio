@@ -19,8 +19,8 @@ export default function TinyApp(props) {
           <img id="logo-t" src={logo} alt="tweeter logo" />
         </a>
         <p>TinyApp was my first real web dev project, in which users can create short URLs for their favorite sites, a la bit.ly.</p>
-        <img id="tiny" src={gif} alt="tinyapp" />
         <p>TECH STACK: Express, Bootstrap.</p>
+        <img id="tiny" src={gif} alt="tinyapp" />
       </div>
       <div className="portfolio-buttons">
         <FontAwesomeIcon onClick={props.onBack} icon="caret-square-left" size="2x" />

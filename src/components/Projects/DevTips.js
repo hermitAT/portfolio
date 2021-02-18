@@ -19,8 +19,8 @@ export default function DevTips(props) {
           <img id="logo" src={logo} alt="devtips logo" />
         </a>
         <p>DevTips was developed to be used by web developers to share tips, links and other helpful resources with each other, split by resource type and hashtags.</p>
-        <img id="devtips" src={gif} alt="devtips" />
         <p>TECH STACK: PSQL, Express, Bootstrap, CSS.</p>
+        <img id="devtips" src={gif} alt="devtips" />
       </div>
       <div className="portfolio-buttons">
         <FontAwesomeIcon onClick={props.onBack} icon="caret-square-left" size="2x" />

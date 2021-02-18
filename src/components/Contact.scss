@@ -1,9 +1,8 @@
 @import "styles/variables.scss";
 
 .contact {
-
-  margin-top: 8rem;
-  margin-bottom: 5rem;
+  margin-top: 7rem;
+  margin-bottom: 2rem;
   height: 350px;
   width: 700px;
   background-color: $white;
@@ -92,8 +91,8 @@
 
 @media only screen and (max-width: 704px) {
   .contact {
-    margin-top: 7rem;
-    margin-bottom: 3rem;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
     max-width: 85vw;
     height: auto;
 
@@ -105,8 +104,8 @@
 
 @media only screen and (max-width: 768px) {
   .contact {
-    margin-top: 7rem;
-    margin-bottom: 3rem;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
     max-width: 85vw;
     height: auto;
   }

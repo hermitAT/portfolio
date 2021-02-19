@@ -143,10 +143,10 @@ export default function Intro(props) {
       </div>
       <div className="portfolio-buttons">
         <Link to="/">
-            <FontAwesomeIcon icon="home" size="3x" />
+            <FontAwesomeIcon icon="home" size="2x" />
         </Link>
         <a href="https://github.com/hermitAT/" target="_blank" rel="noopener noreferrer external">
-          <FontAwesomeIcon icon={["fab", "github"]} size="3x" />
+          <FontAwesomeIcon icon={["fab", "github"]} size="2x" />
         </a>
       </div>
     </section>

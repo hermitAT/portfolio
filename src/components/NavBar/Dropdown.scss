@@ -4,6 +4,7 @@
   background: $color-dark;
   border-radius: 8px;
   position: absolute;
+  z-index: 9999;
   top: 4.25rem;
   right: 1rem;
   width: 200px;
@@ -63,6 +64,7 @@
 @media only screen and (max-width: 600px) {
   .menu {
     width: 150px;
+    top: 2.75rem;
 
     li a {
       display: flex;

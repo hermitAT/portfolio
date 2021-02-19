@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Select from "react-select";
 
 import useVisualMode from "hooks/useVisualMode";
 
@@ -18,6 +19,25 @@ export default function ProjectSelector(props) {
   const TWEETER = "TWEETER";
   const TINYAPP = "TINYAPP";
 
+  const options = [
+    { value: CSAGE, label: "CocktailSage" },
+    { value: DEVTIPS, label: "DevTips" },
+    { value: SCHEDULER, label: "Scheduler" },
+    { value: TWEETER, label: "Tweeter" },
+    { value: TINYAPP, label: "TinyApp" },
+  ];
+
+  const customStyle = {
+    option: (provided, state) => ({
+      ...provided,
+      color: 'black',
+      backgroundColor: state.isSelected ? '#fdc029' : 'white'
+    }),
+    control: (provided) => ({
+      ...provided
+    })
+  };
+
   const [project, setProject] = useState(CSAGE);
 
   const { mode, transition } = useVisualMode();
@@ -31,7 +51,15 @@ export default function ProjectSelector(props) {
     <div class="portfolio--radio">
       <h1>PROJECTS:</h1>
       <p>View a preview or click the preview to see more!</p>
-      <div
+      {options && (
+          <Select
+            styles={customStyle}
+            className="portfolio--select"
+            options={options}
+            defaultValue={{ value: CSAGE, label: "CocktailSage" }}
+            onChange={(e) => setProject(e.value)}
+          />
+        )}      <div
         class="portfolio--radio-container"
         value={project}
         onChange={e => setProject(e.target.value)}

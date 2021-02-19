@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Select from "react-select";
 
 import useVisualMode from "hooks/useVisualMode";
 import ProjectSelector from "./ProjectSelector";
@@ -40,7 +41,26 @@ export default function Intro(props) {
   const FRAMEWORKS = "FRAMEWORKS";
   const DB = "DB";
   const TESTING = "TESTING";
+
+  const options = [
+    { value: LANG, label: "Languages" },
+    { value: FRAMEWORKS, label: "Frameworks" },
+    { value: STYLE, label: "Style && Frontend" },
+    { value: DB, label: "Database && Deployment" },
+    { value: TESTING, label: "Testing" },
+  ];
   
+  const customStyle = {
+    option: (provided, state) => ({
+      ...provided,
+      color: 'black',
+      backgroundColor: state.isSelected ? '#fdc029' : 'white'
+    }),
+    control: (provided) => ({
+      ...provided
+    })
+  };
+
   const [tech, setTech] = useState(LANG);
   
   const { mode, transition } = useVisualMode();
@@ -58,8 +78,17 @@ export default function Intro(props) {
         onTweet={props.onTweet}
         onTiny={props.onTiny}
       />
-      <h1>SKILLS:</h1>
       <div class="portfolio--radio">
+        <h1>SKILLS:</h1>
+        {options && (
+          <Select
+            styles={customStyle}
+            className="portfolio--select"
+            options={options}
+            defaultValue={{ value: LANG, label: "Languages" }}
+            onChange={(e) => setTech(e.value)}
+          />
+        )}
         <div
           class="portfolio--radio-container"
           value={tech}

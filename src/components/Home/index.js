@@ -11,7 +11,7 @@ export default function Home() {
     <main className="home">
       <section className="home-container">
         <img src={pika} alt="hello" />
-        <h3>Hi! I'm Adam Thorne, full-stack developer!</h3>
+        <h3>Hi! Thank you for visiting!</h3>
         <div className="home-links">
             <Link to="/about"><FontAwesomeIcon className="hide-icon" icon="caret-right" size="2x" />About</Link>
             <Link to="/projects"><FontAwesomeIcon className="hide-icon" icon="caret-right" size="2x" />Projects</Link>

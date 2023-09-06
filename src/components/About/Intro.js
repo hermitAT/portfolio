@@ -14,11 +14,11 @@ export default function Intro(props) {
         <img id="selfie" src={profile} alt="profile pic" />
         <div>
           <h3>My name is Adam Thorne,</h3>
-          <h4>a full-stack web developer living on Vancouver Island, BC.</h4>
+          <h4>a technical support and product ownership professional living on Vancouver Island, BC.</h4>
         </div>
       </div>
       <p>After spending several years in the hospitality industry, I lept into a career change during the fall of 2020.</p>
-      <p>I'm currently looking for full-time work as a developer and in the meantime I have been busy working on personal projects!</p>
+      <p>After spending the last two and a half years at Cuboh Software, I am now looking for work as a technical contributer in the software-as-a-service industry!</p>
       <div className="about-buttons">
         <Link to="/">
           <FontAwesomeIcon icon="home" size="2x" />

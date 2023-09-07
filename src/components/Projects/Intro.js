@@ -163,14 +163,6 @@ export default function Intro(props) {
         <img src="https://github-readme-stats.vercel.app/api?username=hermitat&show_icons=true&theme=tokyonight&locale=en" alt="stats" />
         <img src="https://github-readme-stats.vercel.app/api/top-langs?username=hermitat&show_icons=true&locale=en&layout=compact&theme=tokyonight" alt="languages" />
       </div>
-      <div className="portfolio-buttons">
-        <Link to="/">
-            <FontAwesomeIcon icon="home" size="2x" />
-        </Link>
-        <a href="https://github.com/hermitAT/" target="_blank" rel="noopener noreferrer external">
-          <FontAwesomeIcon icon={["fab", "github"]} size="2x" />
-        </a>
-      </div>
         <ProjectSelector
         onCSage={props.onCSage}
         onDevtips={props.onDevtips}
@@ -178,6 +170,14 @@ export default function Intro(props) {
         onTweet={props.onTweet}
         onTiny={props.onTiny}
       />
+        <div className="portfolio-buttons">
+        <Link to="/">
+            <FontAwesomeIcon icon="home" size="2x" />
+        </Link>
+        <a href="https://github.com/hermitAT/" target="_blank" rel="noopener noreferrer external">
+          <FontAwesomeIcon icon={["fab", "github"]} size="2x" />
+        </a>
+      </div>
     </section>
   )
 }

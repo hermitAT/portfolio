@@ -71,13 +71,6 @@ export default function Intro(props) {
 
   return (
     <section className="portfolio-container">
-      <ProjectSelector
-        onCSage={props.onCSage}
-        onDevtips={props.onDevtips}
-        onSched={props.onSched}
-        onTweet={props.onTweet}
-        onTiny={props.onTiny}
-      />
       <div class="portfolio--radio">
         <h1>SKILLS:</h1>
         {options && (
@@ -178,6 +171,13 @@ export default function Intro(props) {
           <FontAwesomeIcon icon={["fab", "github"]} size="2x" />
         </a>
       </div>
+        <ProjectSelector
+        onCSage={props.onCSage}
+        onDevtips={props.onDevtips}
+        onSched={props.onSched}
+        onTweet={props.onTweet}
+        onTiny={props.onTiny}
+      />
     </section>
   )
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon }  from "@fortawesome/react-fontawesome";
 
+import lhl from "./lighthouselabs.jpg";
 import "./index.scss";
 
 export default function Intro(props) {
@@ -10,7 +11,7 @@ export default function Intro(props) {
     <section className="about-container">
       <div className="about-intro">
         <a href="https://www.lighthouselabs.ca/" target="_blank" rel="noopener noreferrer external">
-          <img src="https://www.lighthouselabs.ca/assets/lighthouselabs-logo-d5df6d383f7466b06a64de9561fd537493502eafe78bbf3bcd3de82884e5dd85.png" alt="LHL" />
+          <img src={lhl} alt="LHL" />
         </a>
         <h3>In January 2021, I recieved a Diploma in Web Development from <a href="https://www.lighthouselabs.ca/" target="_blank" rel="noopener noreferrer external">Lighthouse Labs</a>.</h3>
       </div>
